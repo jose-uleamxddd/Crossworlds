@@ -1,0 +1,311 @@
+export const translations = {
+  en: {
+    nav: {
+      home: 'Home',
+      about: 'About Us',
+      ministries: 'Ministries',
+      getInvolved: 'Get Involved',
+      contact: 'Contact',
+    },
+    home: {
+      title: 'Music & English Academy',
+      subtitle: 'Learn music and English while growing in faith. Crossworlds Connection combines academic excellence with Christian values.',
+      cta1: 'Get Started',
+      cta2: 'Learn More',
+      stats: {
+        students: 'Students',
+        ministries: 'Active Ministries',
+        years: 'Years of Service',
+      },
+    },
+    about: {
+      title: 'About Us',
+      subtitle: 'Discover our mission and values',
+      ourStory: 'Our Story',
+      storyTitle: 'Roots of CrossWorlds Connections',
+      storyIntro: 'In 2014, Stephen and Robin Wright did something unusual at a stage of life when most people think about slowing down: they repurposed their lives for God\'s Kingdom. Leaving behind careers in the U.S., they moved to Ecuador as the WIT Team — Whatever It Takes. Out of their vision to mentor youth and serve families, CrossWorlds Connections was born.',
+      storyToday: 'Today, CrossWorlds is a vibrant foundation offering music, English, sewing, and vocational programs that connect people across cultures and transform lives for eternity. What began with a kids\' camp and a single sewing class has grown into a movement of discipleship, community, and hope.',
+      storyInvitation: 'And the story isn\'t finished. The same call that led the Wrights to Ecuador now extends to baby boomers, empty-nesters, widows, widowers, students, and young adults — anyone willing to invest their life in something greater than themselves. Whether for a week, a summer, or a lifetime, you can be part of a story that is still being written.',
+      timeline: 'Our Journey',
+      timelineSubtitle: 'From Vision to Reality',
+      mission: 'Our Mission',
+      missionText: 'To help youth become academically prepared, spiritually rooted, globally minded servant leaders.',
+      callToRepurpose: 'A Call to Repurpose Life',
+      callText: 'CrossWorlds is more than a foundation — it\'s a movement of people who believe that life is too valuable to waste on self-centered living. Our story began with two people who chose not to retire from life, but to repurpose it for God\'s Kingdom.',
+      milestones: {
+        2019: {
+          title: 'The Beginning',
+          description: 'First Kids\' Music and Worship Day Camp welcomed up to 200 children, offered free of charge. Sewing ministry Coser Para Vivir was born.',
+        },
+        2022: {
+          title: 'Official Foundation',
+          description: 'CrossWorlds Connections, Inc. established as a Missouri non-profit. CrossWorlds Center for Connections opened in Ecuador.',
+        },
+        2023: {
+          title: 'Expansion',
+          description: 'Foundation status granted by Ecuadorian government. Programs expanded into music, English, and vocational training.',
+        },
+        2024: {
+          title: 'New Partnerships',
+          description: 'Partnership with ULEAM University launched Giving New Life program, providing hope and resources for struggling families.',
+        },
+        2025: {
+          title: 'Growing Impact',
+          description: 'Additional space leased to expand classrooms and sewing ministry, making room for more transformed lives.',
+        },
+      },
+    },
+    ministries: {
+      title: 'Our Ministries',
+      subtitle: 'Seven pathways to spiritual growth and community service',
+      findYourMinistry: 'Find Your Ministry',
+      findDescription: 'Each ministry is designed to help you grow spiritually while serving others. Find the one that calls to your heart.',
+      joinMinistry: 'Join a Ministry',
+      learnMore: 'Learn More',
+      list: {
+        sewing: {
+          title: 'Coser para Vivir',
+          subtitle: 'Sewing for Life',
+          description: 'Learning practical skills while serving the community. This ministry teaches sewing and craftsmanship with the purpose of helping others.',
+        },
+        music: {
+          title: 'High Notes & High Hopes',
+          subtitle: 'Music Ministry',
+          description: 'Developing musical talents and using them to inspire faith and praise. Students learn instruments and voice while growing spiritually.',
+        },
+        youth: {
+          title: 'Tesoros del Rey',
+          subtitle: 'Treasures of the King',
+          description: 'A youth-focused ministry addressing spiritual formation, discipleship, and leadership development for young believers.',
+        },
+        english: {
+          title: 'English Ministry',
+          subtitle: 'Language & Culture',
+          description: 'Teaching English as a bridge to global communication and understanding different cultures through a Christian perspective.',
+        },
+        giving: {
+          title: 'Giving Ministry',
+          subtitle: 'Generosity & Service',
+          description: 'Teaching the Biblical principles of giving, stewardship, and service to others in the community.',
+        },
+        newLife: {
+          title: 'New Life Ministry',
+          subtitle: 'Transformation Through Faith',
+          description: 'A ministry for spiritual rebirth and transformation, helping individuals discover their purpose in Christ.',
+        },
+        roots: {
+          title: 'Roots & Routes',
+          subtitle: 'Heritage & Journey',
+          description: 'Exploring our spiritual heritage while charting new paths of faith, connecting past wisdom with future vision.',
+        },
+      },
+    },
+    contact: {
+      title: 'Contact Us',
+      subtitle: 'We are here to help and answer any questions you might have',
+      getInTouch: 'Get in Touch',
+      phone: 'Phone',
+      email: 'Email',
+      location: 'Location',
+      hours: 'Hours',
+      mondayFriday: 'Monday - Friday',
+      saturday: 'Saturday',
+      form: {
+        name: 'Your Name',
+        email: 'Your Email',
+        message: 'Your Message',
+        send: 'Send Message',
+      },
+    },
+    donation: {
+      title: 'Support Our Mission',
+      subtitle: 'Your donation helps us provide quality education united with spiritual growth',
+      enterEmail: 'Enter your email',
+      emailPlaceholder: 'your@email.com',
+      donateNow: 'Donate on GoFundMe',
+      secureMessage: 'You will be redirected to GoFundMe to complete your donation securely.',
+    },
+    cta: {
+      title: 'Ready to Join Our Community?',
+      subtitle: 'Take the first step toward combining education with spiritual growth.',
+      contact: 'Contact Us',
+      exploreMinistries: 'Explore Ministries',
+    },
+    footer: {
+      tagline: 'When worlds cross, language connects',
+      quickLinks: 'Quick Links',
+      followUs: 'Follow Us',
+      rights: 'All rights reserved.',
+    },
+    getInvolved: {
+      title: 'Get Involved',
+      subtitle: 'Join our community and make a difference',
+    },
+  },
+  es: {
+    nav: {
+      home: 'Inicio',
+      about: 'Nosotros',
+      ministries: 'Ministerios',
+      getInvolved: 'Participa',
+      contact: 'Contacto',
+    },
+    home: {
+      title: 'Academia de música e inglés',
+      subtitle: 'Aprende música e inglés mientras creces en la fe. Crossworlds Connection combina excelencia académica con valores cristianos.',
+      cta1: 'Comenzar',
+      cta2: 'Conoce Más',
+      stats: {
+        students: 'Estudiantes',
+        ministries: 'Ministerios Activos',
+        years: 'Años de Servicio',
+      },
+    },
+    about: {
+      title: 'Nosotros',
+      subtitle: 'Descubre nuestra misión y valores',
+      ourStory: 'Nuestra Historia',
+      storyTitle: 'Raíces de CrossWorlds Connections',
+      storyIntro: 'En 2014, Stephen y Robin Wright hicieron algo poco común en una etapa de la vida en la que la mayoría piensa en reducir el paso: redirigieron sus vidas para el Reino de Dios. Dejando atrás sus carreras en los EE.UU., se mudaron a Ecuador como el equipo WIT — Whatever It Takes (Lo Que Sea Necesario). De su visión de guiar a los jóvenes y servir a las familias nació CrossWorlds Connections.',
+      storyToday: 'Hoy, CrossWorlds es una fundación vibrante que ofrece programas de música, inglés, costura y capacitación vocacional que conectan a las personas entre culturas y transforman vidas para la eternidad. Lo que comenzó con un campamento infantil y una sola clase de costura se ha convertido en un movimiento de discipulado, comunidad y esperanza.',
+      storyInvitation: 'Y la historia no ha terminado. El mismo llamado que llevó a los Wright a Ecuador ahora se extiende a baby boomers, padres con el nido vacío, viudas, viudos, estudiantes y jóvenes adultos — cualquiera que esté dispuesto a invertir su vida en algo más grande que sí mismo. Ya sea por una semana, un verano o toda una vida, tú puedes ser parte de una historia que aún se está escribiendo.',
+      timeline: 'Nuestro Camino',
+      timelineSubtitle: 'De la Visión a la Realidad',
+      mission: 'Nuestra Misión',
+      missionText: 'Ayudar a los jóvenes a ser académicamente preparados, espiritualmente arraigados y líderes servidores con una visión global.',
+      callToRepurpose: 'Un Llamado a Redirigir la Vida',
+      callText: 'CrossWorlds es más que una fundación — es un movimiento de personas que creen que la vida es demasiado valiosa para desperdiciarla en el egoísmo. Nuestra historia comenzó con dos personas que eligieron no retirarse de la vida, sino redirigirla para el Reino de Dios.',
+      milestones: {
+        2019: {
+          title: 'El Comienzo',
+          description: 'Primer Campamento de Música y Adoración para Niños recibió hasta 200 niños, ofrecido gratuitamente. Nació el ministerio de costura Coser Para Vivir.',
+        },
+        2022: {
+          title: 'Fundación Oficial',
+          description: 'Se estableció CrossWorlds Connections, Inc. como organización sin fines de lucro en Missouri. CrossWorlds Center for Connections abrió en Ecuador.',
+        },
+        2023: {
+          title: 'Expansión',
+          description: 'El gobierno ecuatoriano otorgó estatus de fundación. Los programas se expandieron a música, inglés y capacitación vocacional.',
+        },
+        2024: {
+          title: 'Nuevas Alianzas',
+          description: 'La alianza con la Universidad ULEAM lanzó el programa Dar Nueva Vida, brindando esperanza y recursos a familias necesitadas.',
+        },
+        2025: {
+          title: 'Impacto Creciente',
+          description: 'Se arrendó espacio adicional para ampliar aulas y el ministerio de costura, creando capacidad para transformar más vidas.',
+        },
+      },
+    },
+    ministries: {
+      title: 'Nuestros Ministerios',
+      subtitle: 'Siete caminos para el crecimiento espiritual y el servicio comunitario',
+      findYourMinistry: 'Encuentra Tu Ministerio',
+      findDescription: 'Cada ministerio está diseñado para ayudarte a crecer espiritualmente mientras sirves a otros. Encuentra el que hable a tu corazón.',
+      joinMinistry: 'Únete a un Ministerio',
+      learnMore: 'Conoce Más',
+      list: {
+        sewing: {
+          title: 'Coser para Vivir',
+          subtitle: 'Costura para la Vida',
+          description: 'Aprendiendo habilidades prácticas mientras se sirve a la comunidad. Este ministerio enseña costura y artesanía con el propósito de ayudar a otros.',
+        },
+        music: {
+          title: 'High Notes & High Hopes',
+          subtitle: 'Ministerio de Música',
+          description: 'Desarrollando talentos musicales y usándolos para inspirar fe y alabanza. Los estudiantes aprenden instrumentos y canto mientras crecen espiritualmente.',
+        },
+        youth: {
+          title: 'Tesoros del Rey',
+          subtitle: 'Tesoros del Rey',
+          description: 'Un ministerio enfocado en jóvenes que aborda la formación espiritual, el discipulado y el desarrollo de liderazgo para jóvenes creyentes.',
+        },
+        english: {
+          title: 'Ministerio de Inglés',
+          subtitle: 'Idioma y Cultura',
+          description: 'Enseñando inglés como puente para la comunicación global y comprensión de diferentes culturas desde una perspectiva cristiana.',
+        },
+        giving: {
+          title: 'Ministerio de Generosidad',
+          subtitle: 'Generosidad y Servicio',
+          description: 'Enseñando los principios bíblicos de dar, mayordomía y servicio a otros en la comunidad.',
+        },
+        newLife: {
+          title: 'Ministerio Vida Nueva',
+          subtitle: 'Transformación a través de la Fe',
+          description: 'Un ministerio para el renacimiento espiritual y la transformación, ayudando a las personas a descubrir su propósito en Cristo.',
+        },
+        roots: {
+          title: 'Raíces y Rutas',
+          subtitle: 'Herencia y Jornada',
+          description: 'Explorando nuestra herencia espiritual mientras trazamos nuevos caminos de fe, conectando la sabiduría del pasado con la visión del futuro.',
+        },
+      },
+    },
+    contact: {
+      title: 'Contáctanos',
+      subtitle: 'Estamos aquí para ayudarte y responder cualquier pregunta que tengas',
+      getInTouch: 'Ponte en Contacto',
+      phone: 'Teléfono',
+      email: 'Correo',
+      location: 'Ubicación',
+      hours: 'Horarios',
+      mondayFriday: 'Lunes - Viernes',
+      saturday: 'Sábado',
+      form: {
+        name: 'Tu Nombre',
+        email: 'Tu Correo',
+        message: 'Tu Mensaje',
+        send: 'Enviar Mensaje',
+      },
+    },
+    donation: {
+      title: 'Apoya Nuestra Misión',
+      subtitle: 'Tu donación nos ayuda a proporcionar educación de calidad unida con crecimiento espiritual',
+      enterEmail: 'Ingresa tu correo',
+      emailPlaceholder: 'tu@correo.com',
+      donateNow: 'Donar en GoFundMe',
+      secureMessage: 'Serás redirigido a GoFundMe para completar tu donación de forma segura.',
+    },
+    cta: {
+      title: '¿Listo para Unirte a Nuestra Comunidad?',
+      subtitle: 'Da el primer paso para combinar educación con crecimiento espiritual.',
+      contact: 'Contáctanos',
+      exploreMinistries: 'Explorar Ministerios',
+    },
+    footer: {
+      tagline: 'Cuando los mundos se cruzan, el lenguaje conecta',
+      quickLinks: 'Enlaces Rápidos',
+      followUs: 'Síguenos',
+      rights: 'Todos los derechos reservados.',
+    },
+    getInvolved: {
+      title: 'Participa',
+      subtitle: 'Sé parte de nuestra comunidad en crecimiento de fe y servicio',
+      student: {
+        title: 'Ser Estudiante',
+        description: 'Inscríbete en nuestros programas de música o inglés y experimenta la educación con propósito.',
+        cta: 'Inscríbete Ahora',
+      },
+      volunteer: {
+        title: 'Voluntario',
+        description: 'Comparte tus talentos y tiempo con nuestra comunidad a través de uno de nuestros ministerios.',
+        cta: 'Ser Voluntario',
+      },
+      teach: {
+        title: 'Enseñar',
+        description: 'Únete a nuestro equipo docente y ayuda a formar la próxima generación de líderes.',
+        cta: 'Aplicar Ahora',
+      },
+      sponsor: {
+        title: 'Patrocinar',
+        description: 'Apoya a los estudiantes a través de patrocinio financiero o donaciones.',
+        cta: 'Patrocinar',
+      },
+    },
+  },
+};
+
+export type Language = 'en' | 'es';
+export type TranslationKey = keyof typeof translations.en;
