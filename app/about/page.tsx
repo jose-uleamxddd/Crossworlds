@@ -5,7 +5,7 @@ import Footer from '@/components/footer';
 import { useLanguage } from '@/lib/language-context';
 import { getTranslation } from '@/lib/get-translation';
 import { Calendar, Heart, Users, Globe } from 'lucide-react';
-import SupabaseGallery from '@/components/supabase-gallery';
+import ImageCarousel from '@/components/image-carousel';
 
 export default function About() {
   const { language } = useLanguage();
@@ -89,15 +89,14 @@ export default function About() {
               </p>
             </div>
             
-            {/* Image Gallery */}
+            {/* Image Carousel */}
             <div className="relative">
               <div className="aspect-square rounded-lg overflow-hidden shadow-2xl">
-                <SupabaseGallery
+                <ImageCarousel
                   bucket="Imagenes"
                   folder="Home"
-                  columns={2}
                   className="h-full"
-                  imageClassName="hover:scale-105 transition-transform duration-300"
+                  autoPlayInterval={4000}
                 />
               </div>
             </div>

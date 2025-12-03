@@ -2,7 +2,7 @@
 
 import Navigation from '@/components/navigation';
 import Footer from '@/components/footer';
-import MinistryCard from '@/components/ministry-card';
+import MinistryCarouselCard from '@/components/ministry-carousel-card';
 import { useLanguage } from '@/lib/language-context';
 import { getTranslation } from '@/lib/get-translation';
 
@@ -14,57 +14,86 @@ export default function Ministries() {
       id: 'sewing-ministry',
       title: getTranslation(language, 'ministries.list.sewing.title'),
       subtitle: getTranslation(language, 'ministries.list.sewing.subtitle'),
-      description: getTranslation(language, 'ministries.list.sewing.description'),
       color: 'from-blue-400 to-blue-600',
-      image: '/sewing-ministry-classroom.jpg',
+      slides: [
+        {
+          image: '/sewing-ministry-classroom.jpg',
+          text: getTranslation(language, 'ministries.list.sewing.fullContent'),
+        },
+      ],
+      donationLink: getTranslation(language, 'ministries.list.sewing.donationLink'),
     },
     {
       id: 'music-ministry',
       title: getTranslation(language, 'ministries.list.music.title'),
       subtitle: getTranslation(language, 'ministries.list.music.subtitle'),
-      description: getTranslation(language, 'ministries.list.music.description'),
       color: 'from-purple-400 to-purple-600',
-      image: '/choir-and-musicians-performing.jpg',
+      slides: [
+        {
+          image: '/choir-and-musicians-performing.jpg',
+          text: getTranslation(language, 'ministries.list.music.fullContent'),
+        },
+      ],
     },
     {
       id: 'youth-ministry',
       title: getTranslation(language, 'ministries.list.youth.title'),
       subtitle: getTranslation(language, 'ministries.list.youth.subtitle'),
-      description: getTranslation(language, 'ministries.list.youth.description'),
       color: 'from-pink-400 to-pink-600',
-      image: '/youth-group-gathering.jpg',
+      slides: [
+        {
+          image: '/youth-group-gathering.jpg',
+          text: getTranslation(language, 'ministries.list.youth.fullContent'),
+        },
+      ],
     },
     {
       id: 'english-ministry',
       title: getTranslation(language, 'ministries.list.english.title'),
       subtitle: getTranslation(language, 'ministries.list.english.subtitle'),
-      description: getTranslation(language, 'ministries.list.english.description'),
       color: 'from-green-400 to-green-600',
-      image: '/english-class-students.jpg',
+      slides: [
+        {
+          image: '/english-class-students.jpg',
+          text: getTranslation(language, 'ministries.list.english.fullContent'),
+        },
+      ],
     },
     {
       id: 'giving-ministry',
       title: getTranslation(language, 'ministries.list.giving.title'),
       subtitle: getTranslation(language, 'ministries.list.giving.subtitle'),
-      description: getTranslation(language, 'ministries.list.giving.description'),
       color: 'from-yellow-400 to-yellow-600',
-      image: '/volunteer-helping-community.jpg',
+      slides: [
+        {
+          image: '/volunteer-helping-community.jpg',
+          text: getTranslation(language, 'ministries.list.giving.description'),
+        },
+      ],
     },
     {
       id: 'new-life-ministry',
       title: getTranslation(language, 'ministries.list.newLife.title'),
       subtitle: getTranslation(language, 'ministries.list.newLife.subtitle'),
-      description: getTranslation(language, 'ministries.list.newLife.description'),
       color: 'from-red-400 to-red-600',
-      image: '/baptism-celebration-church.jpg',
+      slides: [
+        {
+          image: '/baptism-celebration-church.jpg',
+          text: getTranslation(language, 'ministries.list.newLife.description'),
+        },
+      ],
     },
     {
       id: 'roots-and-routes',
       title: getTranslation(language, 'ministries.list.roots.title'),
       subtitle: getTranslation(language, 'ministries.list.roots.subtitle'),
-      description: getTranslation(language, 'ministries.list.roots.description'),
       color: 'from-amber-400 to-amber-600',
-      image: '/family-gathering-nature.jpg',
+      slides: [
+        {
+          image: '/family-gathering-nature.jpg',
+          text: getTranslation(language, 'ministries.list.roots.description'),
+        },
+      ],
     },
   ];
   return (
@@ -82,11 +111,11 @@ export default function Ministries() {
       </section>
 
       {/* Ministries Grid */}
-      <section className="py-16 md:py-24 bg-background">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-white to-[#0b5298]/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="space-y-8">
             {ministries.map((ministry) => (
-              <MinistryCard key={ministry.id} {...ministry} />
+              <MinistryCarouselCard key={ministry.id} {...ministry} />
             ))}
           </div>
 

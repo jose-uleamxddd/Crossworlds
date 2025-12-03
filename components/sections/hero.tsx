@@ -7,10 +7,21 @@ export default function Hero() {
   const { language } = useLanguage();
   
   return (
-    <section className="bg-gradient-to-br from-[#0b5298] via-[#0d63b8] to-[#093f72] py-20 md:py-32 relative overflow-hidden">
+    <section className="py-20 md:py-32 relative overflow-hidden">
+  {/* Background Image */}
+  <div className="absolute inset-0 z-0">
+    <img 
+      src="https://hldpvkbebodmtiajldjg.supabase.co/storage/v1/object/public/Imagenes/Home/WhatsApp%20Image%202025-12-03%20at%202.11.32%20PM.jpeg"
+      alt="CrossWorlds Background"
+      className="w-full h-full object-cover"
+    />
+    {/* Overlay */}
+    <div className="absolute inset-0 bg-gradient-to-br from-[#0b5298]/85 via-[#0d63b8]/80 to-[#093f72]/85"></div>
+  </div>
+
   {/* Decorative elements */}
-  <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -mr-48 -mt-48"></div>
-  <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full -ml-48 -mb-48"></div>
+  <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -mr-48 -mt-48 z-[1]"></div>
+  <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full -ml-48 -mb-48 z-[1]"></div>
 
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     <div className="text-center space-y-8 animate-fade-in-up">
@@ -49,7 +60,7 @@ export default function Hero() {
           <p className="text-sm text-white/80">{getTranslation(language, 'home.stats.ministries')}</p>
         </div>
         <div>
-          <p className="text-3xl font-bold text-white">10+</p>
+          <p className="text-3xl font-bold text-white">10</p>
           <p className="text-sm text-white/80">{getTranslation(language, 'home.stats.years')}</p>
         </div>
       </div>

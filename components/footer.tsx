@@ -50,9 +50,8 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4">Follow Us</h4>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-[#dbeafe] transition-colors"><Facebook size={20} /></a>
-              <a href="#" className="hover:text-[#dbeafe] transition-colors"><Instagram size={20} /></a>
-              <a href="#" className="hover:text-[#dbeafe] transition-colors"><Youtube size={20} /></a>
+              <a href="https://www.facebook.com/CrossWorldsConnections/" target="_blank" rel="noopener noreferrer" className="hover:text-[#dbeafe] transition-colors"><Facebook size={20} /></a>
+              <a href="https://www.instagram.com/crossworldscenter_connections/?hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-[#dbeafe] transition-colors"><Instagram size={20} /></a>
             </div>
           </div>
         </div>
