@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Mail, Phone, MapPin, Facebook, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Instagram, Youtube } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -22,6 +22,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/about" className="hover:text-[#dbeafe] transition-colors">About Us</Link></li>
               <li><Link href="/ministries" className="hover:text-[#dbeafe] transition-colors">Ministries</Link></li>
+              <li><Link href="/get-involved" className="hover:text-[#dbeafe] transition-colors">Get Involved</Link></li>
               <li><Link href="/contact" className="hover:text-[#dbeafe] transition-colors">Contact</Link></li>
             </ul>
           </div>
@@ -32,15 +33,15 @@ export default function Footer() {
             <div className="space-y-2 text-sm">
               <div className="flex items-center space-x-2">
                 <Phone size={16} />
-                <span>+593 99 509 6160</span>
+                <span>+1 (555) 123-4567</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail size={16} />
-                <span>Steve.crossworlds@gmail.com</span>
+                <span>info@graceacademy.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin size={16} />
-                <span>Manta, Ecuador <br /> Calle Universidad 12</span>
+                <span>123 Main Street</span>
               </div>
             </div>
           </div>
@@ -56,7 +57,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/20 mt-8 pt-8 text-center text-sm text-white/60">
-          <p>&copy; 2025 Crossworlds Center For Connectios. All rights reserved. | Designed for spiritual and educational growth</p>
+          <p>&copy; 2025 Grace Academy. All rights reserved. | Designed for spiritual and educational growth</p>
         </div>
       </div>
     </footer>
