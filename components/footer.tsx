@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* About */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Grace Academy</h3>
+            <h3 className="font-bold text-lg mb-4">CrossWorlds Connections</h3>
             <p className="text-sm text-white/80">
               Music and English education united with spiritual growth through Christian faith.
             </p>
@@ -33,15 +33,15 @@ export default function Footer() {
             <div className="space-y-2 text-sm">
               <div className="flex items-center space-x-2">
                 <Phone size={16} />
-                <span>+1 (555) 123-4567</span>
+                <span>+593 99 509 6160</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail size={16} />
-                <span>info@graceacademy.com</span>
+                <span>Steve.crossworlds@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin size={16} />
-                <span>123 Main Street</span>
+                <span>Manta, Ecuador <br />Calle Universitaria 12</span>
               </div>
             </div>
           </div>
@@ -52,12 +52,13 @@ export default function Footer() {
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/CrossWorldsConnections/" target="_blank" rel="noopener noreferrer" className="hover:text-[#dbeafe] transition-colors"><Facebook size={20} /></a>
               <a href="https://www.instagram.com/crossworldscenter_connections/?hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-[#dbeafe] transition-colors"><Instagram size={20} /></a>
+              <a href="https://www.tiktok.com/@crossworlds_connection?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className="hover:text-[#dbeafe] transition-colors"><Youtube size={20} /></a>
             </div>
           </div>
         </div>
 
         <div className="border-t border-white/20 mt-8 pt-8 text-center text-sm text-white/60">
-          <p>&copy; 2025 Grace Academy. All rights reserved. | Designed for spiritual and educational growth</p>
+          <p>&copy; 2025 CrossWorlds Connections. All rights reserved. | Designed for spiritual and educational growth</p>
         </div>
       </div>
     </footer>
