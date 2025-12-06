@@ -12,6 +12,27 @@ export default function About() {
 
   const milestones = [
     {
+      year: '2014',
+      title: getTranslation(language, 'about.milestones.2014.title'),
+      description: getTranslation(language, 'about.milestones.2014.description'),
+      icon: Heart,
+      color: 'from-red-400 to-red-600',
+    },
+    {
+      year: '2016',
+      title: getTranslation(language, 'about.milestones.2016.title'),
+      description: getTranslation(language, 'about.milestones.2016.description'),
+      icon: Users,
+      color: 'from-orange-400 to-orange-600',
+    },
+    {
+      year: '2018',
+      title: getTranslation(language, 'about.milestones.2018.title'),
+      description: getTranslation(language, 'about.milestones.2018.description'),
+      icon: Globe,
+      color: 'from-yellow-400 to-yellow-600',
+    },
+    {
       year: '2019',
       title: getTranslation(language, 'about.milestones.2019.title'),
       description: getTranslation(language, 'about.milestones.2019.description'),

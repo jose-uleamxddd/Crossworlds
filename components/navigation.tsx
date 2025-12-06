@@ -19,7 +19,6 @@ export default function Navigation() {
     { label: getTranslation(language, 'nav.home'), href: '/' },
     { label: getTranslation(language, 'nav.about'), href: '/about' },
     { label: getTranslation(language, 'nav.ministries'), href: '/ministries' },
-    { label: getTranslation(language, 'nav.getInvolved'), href: '/get-involved' },
     { label: getTranslation(language, 'nav.contact'), href: '/contact' },
   ];
 

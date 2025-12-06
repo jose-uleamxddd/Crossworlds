@@ -52,15 +52,15 @@ export default function Hero() {
       {/* Stats */}
       <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/20">
         <div>
-          <p className="text-3xl font-bold text-white">100+</p>
+          <p className="text-3xl font-bold text-white">50+</p>
           <p className="text-sm text-white/80">{getTranslation(language, 'home.stats.students')}</p>
         </div>
         <div>
-          <p className="text-3xl font-bold text-white">7</p>
+          <p className="text-3xl font-bold text-white">6</p>
           <p className="text-sm text-white/80">{getTranslation(language, 'home.stats.ministries')}</p>
         </div>
         <div>
-          <p className="text-3xl font-bold text-white">10</p>
+          <p className="text-3xl font-bold text-white">4</p>
           <p className="text-sm text-white/80">{getTranslation(language, 'home.stats.years')}</p>
         </div>
       </div>

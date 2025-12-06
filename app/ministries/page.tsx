@@ -22,6 +22,7 @@ export default function Ministries() {
         },
       ],
       donationLink: getTranslation(language, 'ministries.list.sewing.donationLink'),
+      supabaseFolder: 'ministries/coser para vivir',
     },
     {
       id: 'music-ministry',
@@ -58,30 +59,7 @@ export default function Ministries() {
           text: getTranslation(language, 'ministries.list.english.fullContent'),
         },
       ],
-    },
-    {
-      id: 'giving-ministry',
-      title: getTranslation(language, 'ministries.list.giving.title'),
-      subtitle: getTranslation(language, 'ministries.list.giving.subtitle'),
-      color: 'from-yellow-400 to-yellow-600',
-      slides: [
-        {
-          image: '/volunteer-helping-community.jpg',
-          text: getTranslation(language, 'ministries.list.giving.description'),
-        },
-      ],
-    },
-    {
-      id: 'new-life-ministry',
-      title: getTranslation(language, 'ministries.list.newLife.title'),
-      subtitle: getTranslation(language, 'ministries.list.newLife.subtitle'),
-      color: 'from-red-400 to-red-600',
-      slides: [
-        {
-          image: '/baptism-celebration-church.jpg',
-          text: getTranslation(language, 'ministries.list.newLife.description'),
-        },
-      ],
+      supabaseFolder: 'ministries/giving new life',
     },
     {
       id: 'roots-and-routes',

@@ -33,6 +33,18 @@ export const translations = {
       callToRepurpose: 'A Call to Repurpose Life',
       callText: 'CrossWorlds is more than a foundation — it\'s a movement of people who believe that life is too valuable to waste on self-centered living. Our story began with two people who chose not to retire from life, but to repurpose it for God\'s Kingdom.',
       milestones: {
+        2014: {
+          title: 'The Kingdom Call: Arrival and Commitment',
+          description: 'Stephen and Robin Wright left their U.S. careers to move to Ecuador as the WIT Team, committed to serving local youth and families.',
+        },
+        2016: {
+          title: 'Disaster Relief: Serving After the Earthquake',
+          description: 'After a devastating 7.8-magnitude earthquake, the WIT Team partnered with local churches to provide essential relief to affected families.',
+        },
+        2018: {
+          title: 'Mentoring Leaders: The University Community Group',
+          description: 'Stephen and Robin launched Friday night gatherings for university students, fostering fellowship and raising leaders grounded in God\'s Word.',
+        },
         2019: {
           title: 'The Beginning',
           description: 'First Kids\' Music and Worship Day Camp welcomed up to 200 children, offered free of charge. Sewing ministry Coser Para Vivir was born.',
@@ -57,7 +69,7 @@ export const translations = {
     },
     ministries: {
       title: 'Our Ministries',
-      subtitle: 'Seven pathways to spiritual growth and community service',
+      subtitle: 'Five pathways to spiritual growth and community service',
       findYourMinistry: 'Find Your Ministry',
       findDescription: 'Each ministry is designed to help you grow spiritually while serving others. Find the one that calls to your heart.',
       joinMinistry: 'Join a Ministry',
@@ -144,7 +156,37 @@ export const translations = {
     },
     getInvolved: {
       title: 'Get Involved',
-      subtitle: 'Join our community and make a difference',
+      subtitle: 'Four Ways to Partner with Us',
+      goServe: {
+        title: 'Go & Serve',
+        subtitle: 'Short-Term Missions / On-Site Service',
+        description: 'Experience the Mission firsthand! Join a short-term mission trip for a week or a season.',
+        fullDescription: 'Experience the Mission firsthand! Join a short-term mission trip for a week or a season. Share your skills—teaching English, leading music, helping with construction, or simply building relationships. Step into the journey of discipleship and experience mutual growth by serving alongside our local partners in Ecuador.',
+        cta: 'Learn More',
+      },
+      giveSustain: {
+        title: 'Give & Sustain',
+        subtitle: 'Financial Support / Donation',
+        description: 'Fuel the Foundation! Your financial partnership ensures the stability and growth of the ministry.',
+        fullDescription: 'Fuel the Foundation! Your financial partnership ensures the stability and growth of the ministry. Help us sustain our vital programs (Music, English, Vocational Training) and support the dedicated local staff who make heart-to-heart connections every day. Your donation is an investment in global discipleship.',
+        cta: 'Donate Now',
+      },
+      praySupport: {
+        title: 'Pray & Support',
+        subtitle: 'Spiritual Partnership / Prayer Team',
+        description: 'Cover the Work in Prayer! The true strength of Crossworlds is found on our knees.',
+        fullDescription: 'Cover the Work in Prayer! The true strength of Crossworlds is found on our knees. Join our dedicated prayer team and commit to standing with our staff, students, and families in Ecuador. Receive regular updates and urgent prayer requests as we seek God\'s guidance and provision.',
+        cta: 'Join Prayer Team',
+      },
+      rootsRoutes: {
+        title: 'Roots & Routes',
+        subtitle: 'Immersive Service & Exchange',
+        description: 'Discover Your Roots and New Routes! Engage in a deeper season of cross-cultural ministry.',
+        fullDescription: 'Discover Your Roots and New Routes! Engage in a deeper season of cross-cultural ministry through our Internships, Gap Year, or Mentoring opportunities. Grow in your faith and perspective while using your gifts to strengthen the next generation of leaders in Ecuador. It\'s a two-way journey of transformation.',
+        cta: 'Explore Opportunities',
+      },
+      showMore: 'Show More',
+      showLess: 'Show Less',
     },
   },
   es: {
@@ -181,6 +223,18 @@ export const translations = {
       callToRepurpose: 'Un Llamado a Redirigir la Vida',
       callText: 'CrossWorlds es más que una fundación — es un movimiento de personas que creen que la vida es demasiado valiosa para desperdiciarla en el egoísmo. Nuestra historia comenzó con dos personas que eligieron no retirarse de la vida, sino redirigirla para el Reino de Dios.',
       milestones: {
+        2014: {
+          title: 'El Llamado del Reino: Llegada y Compromiso',
+          description: 'Stephen y Robin Wright dejaron sus carreras en EE.UU. para mudarse a Ecuador como el Equipo WIT, comprometidos a servir jóvenes y familias.',
+        },
+        2016: {
+          title: 'Alivio de Desastres: Sirviendo Después del Terremoto',
+          description: 'Tras el terremoto de magnitud 7.8, el Equipo WIT se asoció con iglesias locales para proveer ayuda esencial a familias afectadas.',
+        },
+        2018: {
+          title: 'Formando Líderes: El Grupo Comunitario Universitario',
+          description: 'Stephen y Robin lanzaron reuniones los viernes para estudiantes universitarios, fomentando comunión y formando líderes arraigados en la Palabra.',
+        },
         2019: {
           title: 'El Comienzo',
           description: 'Primer Campamento de Música y Adoración para Niños recibió hasta 200 niños, ofrecido gratuitamente. Nació el ministerio de costura Coser Para Vivir.',
@@ -205,7 +259,7 @@ export const translations = {
     },
     ministries: {
       title: 'Nuestros Ministerios',
-      subtitle: 'Siete caminos para el crecimiento espiritual y el servicio comunitario',
+      subtitle: 'Cinco caminos para el crecimiento espiritual y el servicio comunitario',
       findYourMinistry: 'Encuentra Tu Ministerio',
       findDescription: 'Cada ministerio está diseñado para ayudarte a crecer espiritualmente mientras sirves a otros. Encuentra el que hable a tu corazón.',
       joinMinistry: 'Únete a un Ministerio',
@@ -292,27 +346,37 @@ export const translations = {
     },
     getInvolved: {
       title: 'Participa',
-      subtitle: 'Sé parte de nuestra comunidad en crecimiento de fe y servicio',
-      student: {
-        title: 'Ser Estudiante',
-        description: 'Inscríbete en nuestros programas de música o inglés y experimenta la educación con propósito.',
-        cta: 'Inscríbete Ahora',
+      subtitle: 'Cuatro Formas de Asociarte con Nosotros',
+      goServe: {
+        title: 'Ir y Servir',
+        subtitle: 'Misiones a Corto Plazo / Servicio en Sitio',
+        description: '¡Experimenta la Misión de primera mano! Únete a un viaje misionero a corto plazo por una semana o una temporada.',
+        fullDescription: '¡Experimenta la Misión de primera mano! Únete a un viaje misionero a corto plazo por una semana o una temporada. Comparte tus habilidades—enseñando inglés, dirigiendo música, ayudando con construcción, o simplemente construyendo relaciones. Entra en el viaje del discipulado y experimenta el crecimiento mutuo sirviendo junto a nuestros socios locales en Ecuador.',
+        cta: 'Conoce Más',
       },
-      volunteer: {
-        title: 'Voluntario',
-        description: 'Comparte tus talentos y tiempo con nuestra comunidad a través de uno de nuestros ministerios.',
-        cta: 'Ser Voluntario',
+      giveSustain: {
+        title: 'Dar y Sostener',
+        subtitle: 'Apoyo Financiero / Donación',
+        description: '¡Alimenta la Fundación! Tu asociación financiera asegura la estabilidad y el crecimiento del ministerio.',
+        fullDescription: '¡Alimenta la Fundación! Tu asociación financiera asegura la estabilidad y el crecimiento del ministerio. Ayúdanos a sostener nuestros programas vitales (Música, Inglés, Capacitación Vocacional) y apoyar al personal local dedicado que hace conexiones de corazón a corazón cada día. Tu donación es una inversión en el discipulado global.',
+        cta: 'Donar Ahora',
       },
-      teach: {
-        title: 'Enseñar',
-        description: 'Únete a nuestro equipo docente y ayuda a formar la próxima generación de líderes.',
-        cta: 'Aplicar Ahora',
+      praySupport: {
+        title: 'Orar y Apoyar',
+        subtitle: 'Asociación Espiritual / Equipo de Oración',
+        description: '¡Cubre la Obra en Oración! La verdadera fortaleza de Crossworlds se encuentra de rodillas.',
+        fullDescription: '¡Cubre la Obra en Oración! La verdadera fortaleza de Crossworlds se encuentra de rodillas. Únete a nuestro equipo de oración dedicado y comprométete a apoyar a nuestro personal, estudiantes y familias en Ecuador. Recibe actualizaciones regulares y solicitudes urgentes de oración mientras buscamos la guía y provisión de Dios.',
+        cta: 'Únete al Equipo de Oración',
       },
-      sponsor: {
-        title: 'Patrocinar',
-        description: 'Apoya a los estudiantes a través de patrocinio financiero o donaciones.',
-        cta: 'Patrocinar',
+      rootsRoutes: {
+        title: 'Raíces y Rutas',
+        subtitle: 'Servicio Inmersivo e Intercambio',
+        description: '¡Descubre tus Raíces y Nuevas Rutas! Participa en una temporada más profunda de ministerio intercultural.',
+        fullDescription: '¡Descubre tus Raíces y Nuevas Rutas! Participa en una temporada más profunda de ministerio intercultural a través de nuestras Pasantías, Año Sabático, u oportunidades de Mentoría. Crece en tu fe y perspectiva mientras usas tus dones para fortalecer a la próxima generación de líderes en Ecuador. Es un viaje de transformación en dos direcciones.',
+        cta: 'Explorar Oportunidades',
       },
+      showMore: 'Mostrar Más',
+      showLess: 'Mostrar Menos',
     },
   },
 };

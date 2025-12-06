@@ -1,7 +1,8 @@
 import Navigation from '@/components/navigation';
 import Hero from '@/components/sections/hero';
-import Features from '@/components/sections/features';
+import GetInvolved from '@/components/sections/get-involved';
 import CallToAction from '@/components/sections/cta';
+import StatementOfFaith from '@/components/sections/statement-of-faith';
 import Footer from '@/components/footer';
 
 export default function Home() {
@@ -9,8 +10,9 @@ export default function Home() {
     <main>
       <Navigation />
       <Hero />
-      <Features />
+      <GetInvolved />
       <CallToAction />
+      <StatementOfFaith />
       <Footer />
     </main>
   );

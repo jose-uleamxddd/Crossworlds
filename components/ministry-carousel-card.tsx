@@ -1,7 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { listImages, getImageUrl } from '@/lib/supabase';
 
 interface CarouselSlide {
   image: string;
@@ -15,6 +16,7 @@ interface MinistryCarouselCardProps {
   slides: CarouselSlide[];
   color: string;
   donationLink?: string;
+  supabaseFolder?: string; // Optional: if provided, load images from Supabase
 }
 
 export default function MinistryCarouselCard({
@@ -23,15 +25,42 @@ export default function MinistryCarouselCard({
   slides,
   color,
   donationLink,
+  supabaseFolder,
 }: MinistryCarouselCardProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [carouselSlides, setCarouselSlides] = useState<CarouselSlide[]>(slides);
+  const [isLoading, setIsLoading] = useState(!!supabaseFolder);
+
+  useEffect(() => {
+    async function loadSupabaseImages() {
+      if (!supabaseFolder) return;
+      
+      try {
+        const imageList = await listImages('Imagenes', supabaseFolder);
+        if (imageList.length > 0) {
+          const supabaseSlides = imageList.map((img) => ({
+            image: getImageUrl('Imagenes', supabaseFolder, img.name),
+            text: slides[0]?.text || '', // Use the first slide's text for all images
+          }));
+          setCarouselSlides(supabaseSlides);
+        }
+      } catch (error) {
+        console.error('Error loading Supabase images:', error);
+        // Keep the original slides if loading fails
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    
+    loadSupabaseImages();
+  }, [supabaseFolder, slides]);
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
+    setCurrentSlide((prev) => (prev + 1) % carouselSlides.length);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    setCurrentSlide((prev) => (prev - 1 + carouselSlides.length) % carouselSlides.length);
   };
 
   return (
@@ -40,11 +69,17 @@ export default function MinistryCarouselCard({
       <div className="grid md:grid-cols-2">
         {/* Image Side - Left */}
         <div className="relative h-[300px] md:h-[400px] overflow-hidden">
-          <img
-            src={slides[currentSlide].image}
-            alt={title}
-            className="w-full h-full object-cover"
-          />
+          {isLoading ? (
+            <div className="w-full h-full flex items-center justify-center bg-gray-100">
+              <p className="text-gray-500">Loading images...</p>
+            </div>
+          ) : (
+            <img
+              src={carouselSlides[currentSlide].image}
+              alt={title}
+              className="w-full h-full object-cover"
+            />
+          )}
           <div className="absolute inset-0 bg-gradient-to-r from-[#0b5298]/40 to-transparent"></div>
           
           {/* Title Overlay on Image */}
@@ -58,7 +93,7 @@ export default function MinistryCarouselCard({
         <div className="p-6 md:p-8 flex flex-col justify-center bg-gradient-to-br from-white to-[#0b5298]/5">
           <div className="prose prose-sm max-w-none text-foreground/80 mb-6">
             <div className="whitespace-pre-line leading-relaxed text-sm md:text-base">
-              {slides[currentSlide].text}
+              {carouselSlides[currentSlide].text}
             </div>
           </div>
 
@@ -79,7 +114,7 @@ export default function MinistryCarouselCard({
       </div>
 
       {/* Navigation Buttons */}
-      {slides.length > 1 && (
+      {carouselSlides.length > 1 && (
         <>
           <button
             onClick={prevSlide}
@@ -99,9 +134,9 @@ export default function MinistryCarouselCard({
       )}
 
       {/* Dots Indicator */}
-      {slides.length > 1 && (
+      {carouselSlides.length > 1 && (
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-          {slides.map((_, index) => (
+          {carouselSlides.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}

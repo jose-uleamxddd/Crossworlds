@@ -2,6 +2,7 @@ import Navigation from '@/components/navigation';
 import Footer from '@/components/footer';
 import { notFound } from 'next/navigation';
 import GalleryGrid from '@/components/gallery-grid';
+import ImageCarousel from '@/components/image-carousel';
 
 const ministryDetails: Record<string, {
   title: string;
@@ -229,7 +230,16 @@ export default async function MinistryDetail({ params }: { params: Promise<{ slu
       <section className="py-16 md:py-24 bg-card">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-foreground mb-8 text-center">Ministry in Action</h2>
-          <GalleryGrid />
+          {slug === 'sewing-ministry' ? (
+            <ImageCarousel 
+              bucket="Imagenes" 
+              folder="ministries/coser para vivir" 
+              className="max-w-5xl mx-auto"
+              autoPlayInterval={4000}
+            />
+          ) : (
+            <GalleryGrid />
+          )}
         </div>
       </section>
 

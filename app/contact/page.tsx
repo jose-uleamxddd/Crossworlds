@@ -38,8 +38,8 @@ export default function Contact() {
                   <Phone className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-foreground">{getTranslation(language, 'contact.phone')}</h3>
-                    <p className="text-foreground/70">+1 (555) 123-4567</p>
-                    <p className="text-foreground/70">{getTranslation(language, 'contact.mondayFriday')}, 9AM-5PM EST</p>
+                    <p className="text-foreground/70">+593 99 509 6160</p>
+                    <p className="text-foreground/70">{getTranslation(language, 'contact.mondayFriday')} </p>
                   </div>
                 </div>
 
@@ -47,8 +47,7 @@ export default function Contact() {
                   <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-foreground">{getTranslation(language, 'contact.email')}</h3>
-                    <p className="text-foreground/70">info@graceacademy.com</p>
-                    <p className="text-foreground/70">admissions@graceacademy.com</p>
+                    <p className="text-foreground/70">Steve.crossworlds@gmail.com</p>
                   </div>
                 </div>
 
@@ -65,8 +64,7 @@ export default function Contact() {
                   <Clock className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-foreground">{getTranslation(language, 'contact.hours')}</h3>
-                    <p className="text-foreground/70">{getTranslation(language, 'contact.mondayFriday')}: 9AM - 6PM</p>
-                    <p className="text-foreground/70">{getTranslation(language, 'contact.saturday')}: 10AM - 2PM</p>
+                    <p className="text-foreground/70">{getTranslation(language, 'contact.mondayFriday')}: 8AM-5PM EST</p>
                   </div>
                 </div>
               </div>
