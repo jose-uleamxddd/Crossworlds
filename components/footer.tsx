@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Mail, Phone, MapPin, Facebook, Instagram, Youtube } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -22,7 +22,6 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><Link href="/about" className="hover:text-[#dbeafe] transition-colors">About Us</Link></li>
               <li><Link href="/ministries" className="hover:text-[#dbeafe] transition-colors">Ministries</Link></li>
-              <li><Link href="/get-involved" className="hover:text-[#dbeafe] transition-colors">Get Involved</Link></li>
               <li><Link href="/contact" className="hover:text-[#dbeafe] transition-colors">Contact</Link></li>
             </ul>
           </div>
@@ -52,7 +51,6 @@ export default function Footer() {
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/CrossWorldsConnections/" target="_blank" rel="noopener noreferrer" className="hover:text-[#dbeafe] transition-colors"><Facebook size={20} /></a>
               <a href="https://www.instagram.com/crossworldscenter_connections/?hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-[#dbeafe] transition-colors"><Instagram size={20} /></a>
-              <a href="https://www.tiktok.com/@crossworlds_connection?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className="hover:text-[#dbeafe] transition-colors"><Youtube size={20} /></a>
             </div>
           </div>
         </div>
