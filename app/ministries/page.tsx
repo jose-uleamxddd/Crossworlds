@@ -35,6 +35,7 @@ export default function Ministries() {
           text: getTranslation(language, 'ministries.list.music.fullContent'),
         },
       ],
+      supabaseFolder: 'High Notes & High Hopes',
     },
     {
       id: 'youth-ministry',
@@ -72,6 +73,7 @@ export default function Ministries() {
           text: getTranslation(language, 'ministries.list.roots.description'),
         },
       ],
+      supabaseFolder: 'ministries/roots and routes',
     },
   ];
   return (
