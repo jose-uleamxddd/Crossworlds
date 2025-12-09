@@ -8,8 +8,8 @@ export const translations = {
       contact: 'Contact',
     },
     home: {
-      title: 'Music & English Academy',
-      subtitle: 'Learn music and English while growing in faith. Crossworlds Connection combines academic excellence with Christian values.',
+      title: 'CrossWorlds Connection: Uniting Hearts Across the Americas',
+      subtitle: 'We are a non-profit organization dedicated to fostering lasting relationships between North and Latin American cultures. We achieve this by empowering educational initiatives, facilitating cultural exchange, and sharing the Christian faith. Connecting people through the universal languages of service, music, and love.',
       cta1: 'Get Started',
       cta2: 'Learn More',
       stats: {
@@ -198,8 +198,8 @@ export const translations = {
       contact: 'Contacto',
     },
     home: {
-      title: 'Academia de música e inglés',
-      subtitle: 'Aprende música e inglés mientras creces en la fe. Crossworlds Connection combina excelencia académica con valores cristianos.',
+      title: 'CrossWorlds Connection: Uniendo Corazones a Través de las Américas',
+      subtitle: 'Somos una organización sin fines de lucro dedicada a fomentar relaciones duraderas entre las culturas de América del Norte y Latinoamérica. Lo logramos impulsando iniciativas educativas, facilitando el intercambio cultural y compartiendo la fe cristiana. Conectando personas a través de los lenguajes universales del servicio, la música y el amor.',
       cta1: 'Comenzar',
       cta2: 'Conoce Más',
       stats: {

@@ -1,10 +1,15 @@
 'use client';
 
+import { useState } from 'react';
 import { useLanguage } from '@/lib/language-context';
 import { getTranslation } from '@/lib/get-translation';
 
 export default function Hero() {
   const { language } = useLanguage();
+  const [isExpanded, setIsExpanded] = useState(false);
+  
+  const subtitle = getTranslation(language, 'home.subtitle');
+  const shortSubtitle = subtitle.split('.').slice(0, 1).join('.') + '.';
   
   return (
     <section className="py-20 md:py-32 relative overflow-hidden">
@@ -29,9 +34,20 @@ export default function Hero() {
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 text-balance">
           {getTranslation(language, 'home.title')}
         </h1>
-        <p className="text-xl md:text-2xl text-white/90 text-balance max-w-3xl mx-auto">
-          {getTranslation(language, 'home.subtitle')}
-        </p>
+        <div className="text-xl md:text-2xl text-white/90 text-balance max-w-3xl mx-auto">
+          <p>
+            {isExpanded ? subtitle : shortSubtitle}
+          </p>
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="mt-2 text-base text-white/80 hover:text-white underline transition-colors"
+          >
+            {isExpanded 
+              ? (language === 'en' ? 'Show Less' : 'Mostrar Menos')
+              : (language === 'en' ? 'Show More' : 'Mostrar Más')
+            }
+          </button>
+        </div>
       </div>
 
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
