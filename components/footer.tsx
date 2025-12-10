@@ -11,58 +11,81 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#0b5298] text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* About */}
-          <div>
-            <h3 className="font-bold text-lg mb-4">CrossWorlds Connections</h3>
-            <p className="text-sm text-white/80">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px- py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 items-start mb-11">
+          {/* CrossWorlds Connections */}
+          <div className="text-center md:text-left flex flex-col">
+            <h3 className="font-bold text-xl mb-4">CrossWorlds Connections</h3>
+            <p className="text-sm text-white/90 leading-relaxed">
               {t.footer.aboutDescription}
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="font-bold mb-4">{t.footer.quickLinks}</h4>
-            <ul className="space-y-2 text-sm">
-              <li><Link href="/about" className="hover:text-[#dbeafe] transition-colors">{t.footer.aboutUs}</Link></li>
-              <li><Link href="/ministries" className="hover:text-[#dbeafe] transition-colors">{t.footer.ministries}</Link></li>
-              <li><Link href="/get-involved" className="hover:text-[#dbeafe] transition-colors">{t.footer.getInvolved}</Link></li>
-              <li><Link href="/contact" className="hover:text-[#dbeafe] transition-colors">{t.footer.contact}</Link></li>
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="font-bold mb-4">{t.footer.contactTitle}</h4>
-            <div className="space-y-2 text-sm">
-              <div className="flex items-center space-x-2">
-                <Phone size={16} />
-                <span>+593 99 509 6160</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Mail size={16} />
-                <span>Steve.crossworlds@gmail.com</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <MapPin size={16} />
-                <span>{t.footer.location} <br />{t.footer.address}</span>
-              </div>
+          {/* Follow Us */}
+          <div className="text-center flex flex-col items-center">
+            <h4 className="font-bold text-xl mb-4">{t.footer.followUs}</h4>
+            <div className="flex justify-center space-x-4">
+              <a 
+                href="https://www.facebook.com/CrossWorldsCenterForConnections/ " 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition-all hover:scale-110"
+                aria-label="Facebook"
+              >
+                <Facebook size={20} />
+              </a>
+              <a 
+                href="https://www.instagram.com/crossworldscenter_connections/?hl=en" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition-all hover:scale-110"
+                aria-label="Instagram"
+              >
+                <Instagram size={20} />
+              </a>
+              <a 
+                href="https://www.tiktok.com/@crossworlds_connection?is_from_webapp=1&sender_device=pc" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-white/10 p-3 rounded-full hover:bg-white/20 transition-all hover:scale-110"
+                aria-label="TikTok"
+              >
+                <Youtube size={20} />
+              </a>
             </div>
           </div>
 
-          {/* Social */}
-          <div>
-            <h4 className="font-bold mb-4">{t.footer.followUs}</h4>
-            <div className="flex space-x-4">
-              <a href="https://www.facebook.com/CrossWorldsConnections/" target="_blank" rel="noopener noreferrer" className="hover:text-[#dbeafe] transition-colors"><Facebook size={20} /></a>
-              <a href="https://www.instagram.com/crossworldscenter_connections/?hl=en" target="_blank" rel="noopener noreferrer" className="hover:text-[#dbeafe] transition-colors"><Instagram size={20} /></a>
-              <a href="https://www.tiktok.com/@crossworlds_connection?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" className="hover:text-[#dbeafe] transition-colors"><Youtube size={20} /></a>
+          {/* Quick Links */}
+          <div className="text-center md:text-right flex flex-col md:items-end">
+            <div>
+              <h4 className="font-bold text-xl mb-4">{t.footer.quickLinks}</h4>
+              <ul className="space-y-3 inline-block text-left">
+                <li>
+                  <Link href="/about" className="hover:text-[#dbeafe] transition-colors font-medium text-base">
+                    {t.footer.aboutUs}
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/ministries" className="hover:text-[#dbeafe] transition-colors font-medium text-base">
+                    {t.footer.ministries}
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/get-involved" className="hover:text-[#dbeafe] transition-colors font-medium text-base">
+                    {t.footer.getInvolved}
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="hover:text-[#dbeafe] transition-colors font-medium text-base">
+                    {t.footer.contact}
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-white/20 mt-8 pt-8 text-center text-sm text-white/60">
+        <div className="border-t border-white/20 pt-8 text-center text-sm text-white/70">
           <p>&copy; 2025 CrossWorlds Connections. {t.footer.copyright}</p>
         </div>
       </div>

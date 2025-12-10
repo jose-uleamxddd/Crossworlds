@@ -100,6 +100,7 @@ export default function ContactForm() {
           <option value="volunteering">{t.subjectVolunteering}</option>
           <option value="donation">{t.subjectDonation}</option>
           <option value="other">{t.subjectOther}</option>
+          <option value="other2">{t.subjectOther2}</option>
         </select>
       </div>
 

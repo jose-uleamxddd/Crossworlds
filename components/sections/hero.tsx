@@ -34,7 +34,7 @@ export default function Hero() {
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white leading-tight text-balance drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]">
           {getTranslation(language, 'home.title')}
         </h1>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white leading-tight text-balance drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-white leading-tight text-balance drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]">
           {getTranslation(language, 'home.title2')}
         </h2>
         <div className="text-lg sm:text-xl md:text-2xl text-white/90 text-balance max-w-4xl mx-auto mt-6">
@@ -71,7 +71,7 @@ export default function Hero() {
       {/* Stats */}
       <div className="grid grid-cols-3 gap-8 pt-8 border-t border-white/20">
         <div>
-          <p className="text-3xl font-bold text-white">50+</p>
+          <p className="text-3xl font-bold text-white">2</p>
           <p className="text-sm text-white/80">{getTranslation(language, 'home.stats.students')}</p>
         </div>
         <div>
@@ -79,7 +79,7 @@ export default function Hero() {
           <p className="text-sm text-white/80">{getTranslation(language, 'home.stats.ministries')}</p>
         </div>
         <div>
-          <p className="text-3xl font-bold text-white">4</p>
+          <p className="text-3xl font-bold text-white">4+</p>
           <p className="text-sm text-white/80">{getTranslation(language, 'home.stats.years')}</p>
         </div>
       </div>
