@@ -1,8 +1,12 @@
 'use client';
 
 import { useState } from 'react';
+import { useLanguage } from '@/lib/language-context';
+import { translations } from '@/lib/i18n';
 
 export default function ContactForm() {
+  const { language } = useLanguage();
+  const t = translations[language].contact.form;
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -52,10 +56,12 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
-      <h2 className="text-3xl font-bold text-foreground mb-6">Send us a Message</h2>
+      <h2 className="text-3xl font-bold text-foreground mb-6">
+        {language === 'en' ? 'Send us a Message' : 'Envíanos un mensaje'}
+      </h2>
 
       <div>
-        <label className="block text-sm font-semibold text-foreground mb-2">Name</label>
+        <label className="block text-sm font-semibold text-foreground mb-2">{t.name}</label>
         <input
           type="text"
           name="name"
@@ -63,12 +69,12 @@ export default function ContactForm() {
           onChange={handleChange}
           required
           className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-          placeholder="Your name"
+          placeholder={t.namePlaceholder}
         />
       </div>
 
       <div>
-        <label className="block text-sm font-semibold text-foreground mb-2">Email</label>
+        <label className="block text-sm font-semibold text-foreground mb-2">{t.email}</label>
         <input
           type="email"
           name="email"
@@ -76,12 +82,12 @@ export default function ContactForm() {
           onChange={handleChange}
           required
           className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-          placeholder="your@email.com"
+          placeholder={t.emailPlaceholder}
         />
       </div>
 
       <div>
-        <label className="block text-sm font-semibold text-foreground mb-2">Subject</label>
+        <label className="block text-sm font-semibold text-foreground mb-2">{t.subject}</label>
         <select
           name="subject"
           value={formData.subject}
@@ -89,16 +95,16 @@ export default function ContactForm() {
           required
           className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
         >
-          <option value="">Select a subject...</option>
-          <option value="enrollment">Enrollment Inquiry</option>
-          <option value="volunteering">Volunteering</option>
-          <option value="donation">Donation</option>
-          <option value="other">Other</option>
+          <option value="">{t.subjectPlaceholder}</option>
+          <option value="enrollment">{t.subjectEnrollment}</option>
+          <option value="volunteering">{t.subjectVolunteering}</option>
+          <option value="donation">{t.subjectDonation}</option>
+          <option value="other">{t.subjectOther}</option>
         </select>
       </div>
 
       <div>
-        <label className="block text-sm font-semibold text-foreground mb-2">Message</label>
+        <label className="block text-sm font-semibold text-foreground mb-2">{t.message}</label>
         <textarea
           name="message"
           value={formData.message}
@@ -106,7 +112,7 @@ export default function ContactForm() {
           required
           rows={5}
           className="w-full px-4 py-2 border border-border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-          placeholder="Your message here..."
+          placeholder={t.messagePlaceholder}
         />
       </div>
 
@@ -115,12 +121,12 @@ export default function ContactForm() {
         disabled={loading}
         className="w-full px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        {loading ? 'Sending...' : submitted ? 'Message Sent!' : 'Send Message'}
+        {loading ? t.sending : submitted ? t.sent : t.send}
       </button>
 
       {submitted && (
         <div className="p-4 bg-green-100 text-green-800 rounded-lg">
-          Thank you for your message! We'll get back to you soon.
+          {t.successMessage}
         </div>
       )}
 

@@ -13,25 +13,19 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Create transporter with Outlook using modern authentication
+    // Create transporter with Gmail (más confiable que Outlook)
     const transporter = nodemailer.createTransport({
-      host: 'smtp-mail.outlook.com',
-      port: 587,
-      secure: false,
+      service: 'gmail',
       auth: {
         user: process.env.EMAIL,
-        pass: process.env.OUTLOOK_APP_PASSWORD,
-      },
-      tls: {
-        ciphers: 'SSLv3',
-        rejectUnauthorized: false,
+        pass: process.env.GMAIL_APP_PASSWORD,
       },
     });
 
     // Email content
     const mailOptions = {
       from: process.env.EMAIL,
-      to: 'Steve.crossworlds@gmail.com',
+      to: `${process.env.DESTINATION_EMAIL}, ${process.env.SECONDARY_EMAIL}`,
       subject: `New Contact Form Message: ${subject}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
