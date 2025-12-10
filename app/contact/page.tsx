@@ -31,42 +31,88 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
             {/* Contact Information */}
             <div>
-              <h2 className="text-3xl font-bold text-foreground mb-8">{getTranslation(language, 'contact.getInTouch')}</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-4">{getTranslation(language, 'contact.getInTouch')}</h2>
+              <p className="text-foreground/80 mb-8">{getTranslation(language, 'contact.getInTouchDescription')}</p>
               
               <div className="space-y-6">
-                <div className="flex gap-4">
-                  <Phone className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="font-semibold text-foreground">{getTranslation(language, 'contact.phone')}</h3>
-                    <p className="text-foreground/70">+593 99 509 6160</p>
-                    <p className="text-foreground/70">{getTranslation(language, 'contact.mondayFriday')} </p>
-                  </div>
-                </div>
-
                 <div className="flex gap-4">
                   <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-foreground">{getTranslation(language, 'contact.email')}</h3>
-                    <p className="text-foreground/70">Steve.crossworlds@gmail.com</p>
+                    <p className="text-foreground/70">
+                      {language === 'en' 
+                        ? getTranslation(language, 'contact.emailAddress')
+                        : 'Steve.crossworlds@gmail.com'
+                      }
+                    </p>
                   </div>
                 </div>
 
-                <div className="flex gap-4">
-                  <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="font-semibold text-foreground">{getTranslation(language, 'contact.location')}</h3>
-                    <p className="text-foreground/70">Manta, Ecuador</p>
-                    <p className="text-foreground/70">27V3+8P</p>
-                  </div>
-                </div>
+                {language === 'en' ? (
+                  <>
+                    <div className="flex gap-4">
+                      <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <h3 className="font-semibold text-foreground">{getTranslation(language, 'contact.usHeadquarters')}</h3>
+                        <p className="text-foreground/70 whitespace-pre-line">{getTranslation(language, 'contact.usHeadquartersInfo')}</p>
+                      </div>
+                    </div>
 
-                <div className="flex gap-4">
-                  <Clock className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="font-semibold text-foreground">{getTranslation(language, 'contact.hours')}</h3>
-                    <p className="text-foreground/70">{getTranslation(language, 'contact.mondayFriday')}: 8AM-5PM EST</p>
-                  </div>
-                </div>
+                    <div className="flex gap-4">
+                      <Clock className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <h3 className="font-semibold text-foreground">{getTranslation(language, 'contact.hours')}</h3>
+                        <p className="text-foreground/70">{getTranslation(language, 'contact.hoursInfo')}</p>
+                        <p className="text-foreground/60 text-sm mt-2 italic">{getTranslation(language, 'contact.hoursNote')}</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-4">
+                      <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <h3 className="font-semibold text-foreground">{getTranslation(language, 'contact.mailingAddress')}</h3>
+                        <p className="text-foreground/70">{getTranslation(language, 'contact.mailingAddressInfo')}</p>
+                        <p className="text-foreground/60 text-sm mt-1 italic">{getTranslation(language, 'contact.mailingAddressNote')}</p>
+                      </div>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="flex gap-4">
+                      <Phone className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <h3 className="font-semibold text-foreground">{getTranslation(language, 'contact.phone')}</h3>
+                        <p className="text-foreground/70">{getTranslation(language, 'contact.phoneNumber')}</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-4">
+                      <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <h3 className="font-semibold text-foreground">{getTranslation(language, 'contact.ecuadorOffice')}</h3>
+                        <p className="text-foreground/70 whitespace-pre-line">{getTranslation(language, 'contact.ecuadorOfficeInfo')}</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-4">
+                      <Clock className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <h3 className="font-semibold text-foreground">{getTranslation(language, 'contact.hours')}</h3>
+                        <p className="text-foreground/70">{getTranslation(language, 'contact.hoursInfo')}</p>
+                        <p className="text-foreground/60 text-sm mt-2 italic">{getTranslation(language, 'contact.hoursNote')}</p>
+                      </div>
+                    </div>
+
+                    <div className="flex gap-4">
+                      <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <h3 className="font-semibold text-foreground">{getTranslation(language, 'contact.physicalAddress')}</h3>
+                        <p className="text-foreground/70">{getTranslation(language, 'contact.physicalAddressInfo')}</p>
+                        <p className="text-foreground/60 text-sm mt-1 italic">{getTranslation(language, 'contact.physicalAddressNote')}</p>
+                      </div>
+                    </div>
+                  </>
+                )}
               </div>
             </div>
 

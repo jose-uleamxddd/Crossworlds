@@ -25,42 +25,32 @@ export default function Ministries() {
       supabaseFolder: 'ministries/coser para vivir',
     },
     {
-      id: 'music-ministry',
-      title: getTranslation(language, 'ministries.list.music.title'),
-      subtitle: getTranslation(language, 'ministries.list.music.subtitle'),
+      id: 'praise-worship',
+      title: getTranslation(language, 'ministries.list.praiseWorship.title'),
+      subtitle: getTranslation(language, 'ministries.list.praiseWorship.subtitle'),
       color: 'from-purple-400 to-purple-600',
       slides: [
         {
-          image: '/choir-and-musicians-performing.jpg',
-          text: getTranslation(language, 'ministries.list.music.fullContent'),
+          image: '/worship-camp.jpg',
+          text: getTranslation(language, 'ministries.list.praiseWorship.fullContent'),
         },
       ],
-      supabaseFolder: 'High Notes & High Hopes',
+      supabaseFolder: 'ministries/Praise & Worship Camp',
     },
     {
-      id: 'youth-ministry',
-      title: getTranslation(language, 'ministries.list.youth.title'),
-      subtitle: getTranslation(language, 'ministries.list.youth.subtitle'),
-      color: 'from-pink-400 to-pink-600',
+      id: 'ccc',
+      title: getTranslation(language, 'ministries.list.ccc.title'),
+      subtitle: getTranslation(language, 'ministries.list.ccc.subtitle'),
+      color: 'from-cyan-400 to-cyan-600',
       slides: [
         {
-          image: '/youth-group-gathering.jpg',
-          text: getTranslation(language, 'ministries.list.youth.fullContent'),
+          image: '/ccc-building.jpg',
+          text: getTranslation(language, 'ministries.list.ccc.fullContent'),
         },
       ],
-    },
-    {
-      id: 'english-ministry',
-      title: getTranslation(language, 'ministries.list.english.title'),
-      subtitle: getTranslation(language, 'ministries.list.english.subtitle'),
-      color: 'from-green-400 to-green-600',
-      slides: [
-        {
-          image: '/english-class-students.jpg',
-          text: getTranslation(language, 'ministries.list.english.fullContent'),
-        },
-      ],
-      supabaseFolder: 'ministries/giving new life',
+      exploreLink: '/ministries/ecuador-ministries',
+      exploreButton: getTranslation(language, 'ministries.list.ccc.exploreButton'),
+      supabaseFolder: 'ministries/Crossworlds Center for connections',
     },
     {
       id: 'roots-and-routes',
@@ -70,10 +60,12 @@ export default function Ministries() {
       slides: [
         {
           image: '/family-gathering-nature.jpg',
-          text: getTranslation(language, 'ministries.list.roots.description'),
+          text: getTranslation(language, 'ministries.list.roots.fullContent'),
         },
       ],
       supabaseFolder: 'ministries/roots and routes',
+      exploreLink: '/about',
+      exploreButton: getTranslation(language, 'ministries.list.roots.aboutButton'),
     },
   ];
   return (
@@ -97,20 +89,6 @@ export default function Ministries() {
             {ministries.map((ministry) => (
               <MinistryCarouselCard key={ministry.id} {...ministry} />
             ))}
-          </div>
-
-          {/* CTA */}
-          <div className="mt-16 bg-accent rounded-lg p-8 text-center text-accent-foreground">
-            <h2 className="text-2xl font-bold mb-4">{getTranslation(language, 'ministries.findYourMinistry')}</h2>
-            <p className="mb-6 text-accent-foreground/80">
-              {getTranslation(language, 'ministries.findDescription')}
-            </p>
-            <a
-              href="/get-involved"
-              className="inline-block px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors"
-            >
-              {getTranslation(language, 'ministries.joinMinistry')}
-            </a>
           </div>
         </div>
       </section>

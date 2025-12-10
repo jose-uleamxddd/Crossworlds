@@ -38,7 +38,7 @@ export default function DonationSection() {
           </div>
 
           <a
-            href="https://www.gofundme.com/"
+            href="https://gofund.me/4cb31a9f4"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full px-6 py-3 bg-primary text-primary-foreground font-bold rounded-lg hover:bg-primary/90 transition-colors flex items-center justify-center gap-2"

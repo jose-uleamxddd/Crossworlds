@@ -16,12 +16,12 @@ export default function Hero() {
   {/* Background Image */}
   <div className="absolute inset-0 z-0">
     <img 
-      src="https://hldpvkbebodmtiajldjg.supabase.co/storage/v1/object/public/Imagenes/Home/WhatsApp%20Image%202025-12-03%20at%202.11.32%20PM.jpeg"
+      src="https://hldpvkbebodmtiajldjg.supabase.co/storage/v1/object/public/Imagenes/Home/Gemini_Generated_Image_9oetkn9oetkn9oet.png"
       alt="CrossWorlds Background"
       className="w-full h-full object-cover"
     />
     {/* Overlay */}
-    <div className="absolute inset-0 bg-gradient-to-br from-[#0b5298]/85 via-[#0d63b8]/80 to-[#093f72]/85"></div>
+    <div className="absolute inset-0 bg-gradient-to-br from-[#0b5298]/85 via-[#0d63b8]/95 to-[#093f72]/85"></div>
   </div>
 
   {/* Decorative elements */}
@@ -29,18 +29,21 @@ export default function Hero() {
   <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/5 rounded-full -ml-48 -mb-48 z-[1]"></div>
 
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div className="text-center space-y-8 animate-fade-in-up">
-      <div>
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 text-balance">
+    <div className="text-center space-y-6 animate-fade-in-up">
+      <div className="flex flex-col gap-2">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white leading-tight text-balance drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]">
           {getTranslation(language, 'home.title')}
         </h1>
-        <div className="text-xl md:text-2xl text-white/90 text-balance max-w-3xl mx-auto">
-          <p>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white leading-tight text-balance drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]">
+          {getTranslation(language, 'home.title2')}
+        </h2>
+        <div className="text-lg sm:text-xl md:text-2xl text-white/90 text-balance max-w-4xl mx-auto mt-6">
+          <p className="leading-relaxed">
             {isExpanded ? subtitle : shortSubtitle}
           </p>
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="mt-2 text-base text-white/80 hover:text-white underline transition-colors"
+            className="mt-3 text-sm sm:text-base text-white/80 hover:text-white underline transition-colors font-medium"
           >
             {isExpanded 
               ? (language === 'en' ? 'Show Less' : 'Mostrar Menos')

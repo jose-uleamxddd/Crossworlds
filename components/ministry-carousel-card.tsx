@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { listImages, getImageUrl } from '@/lib/supabase';
+import { useLanguage } from '@/lib/language-context';
 
 interface CarouselSlide {
   image: string;
@@ -17,6 +18,8 @@ interface MinistryCarouselCardProps {
   color: string;
   donationLink?: string;
   supabaseFolder?: string; // Optional: if provided, load images from Supabase
+  exploreLink?: string; // Optional: link to explore more ministries
+  exploreButton?: string; // Optional: button text for explore
 }
 
 export default function MinistryCarouselCard({
@@ -26,10 +29,14 @@ export default function MinistryCarouselCard({
   color,
   donationLink,
   supabaseFolder,
+  exploreLink,
+  exploreButton,
 }: MinistryCarouselCardProps) {
+  const { language } = useLanguage();
   const [currentSlide, setCurrentSlide] = useState(0);
   const [carouselSlides, setCarouselSlides] = useState<CarouselSlide[]>(slides);
   const [isLoading, setIsLoading] = useState(!!supabaseFolder);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   useEffect(() => {
     async function loadSupabaseImages() {
@@ -64,11 +71,11 @@ export default function MinistryCarouselCard({
   };
 
   return (
-    <div className="group relative overflow-hidden rounded-xl border-2 border-[#0b5298]/20 hover:border-[#0b5298] hover:shadow-2xl transition-all duration-300 bg-white">
+    <div className="group relative overflow-hidden gap-5 rounded-xl border-2 border-[#0b5298]/30 hover:border-[#0b5298] hover:shadow-2xl transition-all duration-300 bg-white">
       {/* Horizontal Layout */}
       <div className="grid md:grid-cols-2">
         {/* Image Side - Left */}
-        <div className="relative h-[300px] md:h-[400px] overflow-hidden">
+        <div className="relative h-[400px] md:h-[500px] overflow-hidden">
           {isLoading ? (
             <div className="w-full h-full flex items-center justify-center bg-gray-100">
               <p className="text-gray-500">Loading images...</p>
@@ -91,10 +98,14 @@ export default function MinistryCarouselCard({
 
         {/* Text Side - Right */}
         <div className="p-6 md:p-8 flex flex-col justify-center bg-gradient-to-br from-white to-[#0b5298]/5">
-          <div className="prose prose-sm max-w-none text-foreground/80 mb-6">
-            <div className="whitespace-pre-line leading-relaxed text-sm md:text-base">
-              {carouselSlides[currentSlide].text}
+          <div className="relative">
+            <div className="max-h-[320px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-[#0b5298]/30 scrollbar-track-transparent hover:scrollbar-thumb-[#0b5298]/50">
+              <div className="prose prose-sm max-w-none text-foreground/80 whitespace-pre-line leading-relaxed text-sm md:text-base pb-4">
+                {carouselSlides[currentSlide].text}
+              </div>
             </div>
+            {/* Fade gradient at bottom - reduced opacity */}
+            <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-white/60 to-transparent pointer-events-none"></div>
           </div>
 
           {/* Donation Link */}
@@ -107,6 +118,18 @@ export default function MinistryCarouselCard({
                 className="inline-flex items-center justify-center w-full px-6 py-3 bg-[#0b5298] text-white font-semibold rounded-lg hover:bg-[#093f72] transition-colors shadow-md"
               >
                 Donar / Donate →
+              </a>
+            </div>
+          )}
+
+          {/* Explore Link */}
+          {exploreLink && exploreButton && (
+            <div className="mt-auto pt-4">
+              <a
+                href={exploreLink}
+                className="inline-flex items-center justify-center w-full px-6 py-3 bg-[#0b5298] text-white font-semibold rounded-lg hover:bg-[#093f72] transition-colors shadow-md"
+              >
+                {exploreButton} →
               </a>
             </div>
           )}
