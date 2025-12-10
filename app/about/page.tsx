@@ -112,7 +112,7 @@ export default function About() {
             
             {/* Image Carousel */}
             <div className="relative">
-              <div className="aspect-square rounded-lg overflow-hidden shadow-2xl">
+              <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-3xl">
                 <ImageCarousel
                   bucket="Imagenes"
                   folder="Home"

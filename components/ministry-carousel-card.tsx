@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { listImages, getImageUrl } from '@/lib/supabase';
 import { useLanguage } from '@/lib/language-context';
+import Image from 'next/image';
 
 interface CarouselSlide {
   image: string;
@@ -38,6 +39,15 @@ export default function MinistryCarouselCard({
   const [isLoading, setIsLoading] = useState(!!supabaseFolder);
   const [isExpanded, setIsExpanded] = useState(false);
 
+  // Función para optimizar URLs de Supabase
+  const getOptimizedImageUrl = (url: string, width: number = 800) => {
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    if (url.includes(supabaseUrl!)) {
+      return `${url}?width=${width}&quality=85&format=webp`;
+    }
+    return url;
+  };
+
   useEffect(() => {
     async function loadSupabaseImages() {
       if (!supabaseFolder) return;
@@ -47,13 +57,12 @@ export default function MinistryCarouselCard({
         if (imageList.length > 0) {
           const supabaseSlides = imageList.map((img) => ({
             image: getImageUrl('Imagenes', supabaseFolder, img.name),
-            text: slides[0]?.text || '', // Use the first slide's text for all images
+            text: slides[0]?.text || '',
           }));
           setCarouselSlides(supabaseSlides);
         }
       } catch (error) {
         console.error('Error loading Supabase images:', error);
-        // Keep the original slides if loading fails
       } finally {
         setIsLoading(false);
       }
@@ -61,6 +70,17 @@ export default function MinistryCarouselCard({
     
     loadSupabaseImages();
   }, [supabaseFolder, slides]);
+
+  // Precarga imagen siguiente
+  useEffect(() => {
+    if (carouselSlides.length <= 1) return;
+    const nextIndex = (currentSlide + 1) % carouselSlides.length;
+    const link = document.createElement('link');
+    link.rel = 'prefetch';
+    link.as = 'image';
+    link.href = getOptimizedImageUrl(carouselSlides[nextIndex].image);
+    document.head.appendChild(link);
+  }, [currentSlide, carouselSlides]);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % carouselSlides.length);
@@ -75,19 +95,23 @@ export default function MinistryCarouselCard({
       {/* Horizontal Layout */}
       <div className="grid md:grid-cols-2">
         {/* Image Side - Left */}
-        <div className="relative h-[400px] md:h-[500px] overflow-hidden">
+        <div className="relative h-[400px] md:h-[500px] overflow-hidden bg-gray-100">
           {isLoading ? (
-            <div className="w-full h-full flex items-center justify-center bg-gray-100">
+            <div className="w-full h-full flex items-center justify-center">
               <p className="text-gray-500">Loading images...</p>
             </div>
           ) : (
-            <img
-              src={carouselSlides[currentSlide].image}
+            <Image
+              src={getOptimizedImageUrl(carouselSlides[currentSlide].image)}
               alt={title}
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
+              priority={currentSlide === 0}
+              quality={85}
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           )}
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0b5298]/40 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0b5298]/40 to-transparent pointer-events-none"></div>
           
           {/* Title Overlay on Image */}
           <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-[#0b5298] to-transparent">

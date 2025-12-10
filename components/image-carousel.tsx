@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { getImageUrl, listImages } from '@/lib/supabase';
+import Image from 'next/image';
 
 interface ImageCarouselProps {
   bucket: string;
@@ -21,6 +22,16 @@ export default function ImageCarousel({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
+  // Función para obtener URL optimizada con transformaciones de Supabase
+  const getOptimizedImageUrl = (url: string, width: number = 1200) => {
+    // Supabase Image Transformations: redimensionar y convertir a WebP
+    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    if (url.includes(supabaseUrl!)) {
+      return `${url}?width=${width}&quality=85&format=webp`;
+    }
+    return url;
+  };
+
   useEffect(() => {
     async function loadImages() {
       try {
@@ -35,6 +46,23 @@ export default function ImageCarousel({
     }
     loadImages();
   }, [bucket, folder]);
+
+  // Precarga inteligente: siguiente y anterior
+  useEffect(() => {
+    if (images.length === 0) return;
+    
+    const nextIndex = (currentIndex + 1) % images.length;
+    const prevIndex = (currentIndex - 1 + images.length) % images.length;
+    
+    // Precargar imágenes adyacentes
+    [nextIndex, prevIndex].forEach(index => {
+      const link = document.createElement('link');
+      link.rel = 'prefetch';
+      link.as = 'image';
+      link.href = getOptimizedImageUrl(images[index]);
+      document.head.appendChild(link);
+    });
+  }, [currentIndex, images]);
 
   useEffect(() => {
     if (images.length === 0) return;
@@ -81,15 +109,21 @@ export default function ImageCarousel({
   return (
     <div className={`relative group ${className}`}>
       {/* Main Image */}
-      <div className="relative w-full h-full overflow-hidden rounded-lg">
-        <img
-          src={images[currentIndex]}
+      <div className="relative w-full h-full overflow-hidden rounded-lg bg-gray-100">
+        <Image
+          src={getOptimizedImageUrl(images[currentIndex])}
           alt={`Slide ${currentIndex + 1}`}
-          className="w-full h-full object-cover transition-opacity duration-500"
+          fill
+          className="object-cover transition-opacity duration-500"
+          priority={currentIndex === 0}
+          loading={currentIndex === 0 ? 'eager' : 'lazy'}
+          quality={85}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+          unoptimized={false}
         />
         
         {/* Overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
       </div>
 
       {/* Navigation Buttons */}
