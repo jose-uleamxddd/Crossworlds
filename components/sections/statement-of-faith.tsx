@@ -57,8 +57,8 @@ export default function StatementOfFaith() {
                 </h3>
                 <p className="text-foreground/80 leading-relaxed mb-6">
                   {language === 'es'
-                    ? 'Como una organización cristiana no denominacional y sin fines de lucro, el liderazgo y el personal del CCC sostienen estas creencias fundamentales. Ellas guían nuestra visión y todo lo que hacemos:'
-                    : 'As a non-denominational Christian non-profit organization, CCC leadership and staff hold these fundamental beliefs. They guide our vision and everything we do:'}
+                    ? 'Como una organización cristiana no denominacional y sin fines de lucro, el liderazgo y el personal del Crossworlds Connections sostienen estas creencias fundamentales. Ellas guían nuestra visión y todo lo que hacemos:'
+                    : 'As a non-denominational Christian non-profit organization, Crossworlds Connections leadership and staff hold these fundamental beliefs. They guide our vision and everything we do:'}
                 </p>
 
                 {/* Beliefs List */}
