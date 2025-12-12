@@ -43,7 +43,7 @@ export default function Ministries() {
       id: 'praise-worship',
       title: getTranslation(language, 'ministries.list.praiseWorship.title'),
       subtitle: getTranslation(language, 'ministries.list.praiseWorship.subtitle'),
-      color: 'from-purple-400 to-purple-600',
+      color: 'from-cyan-400 to-cyan-600',
       slides: [
         {
           image: '/images/ministries/praise-worship-camp/01.jpeg',
@@ -58,6 +58,8 @@ export default function Ministries() {
           text: getTranslation(language, 'ministries.list.praiseWorship.fullContent'),
         },
       ],
+      exploreLink: '/contact',
+      exploreButton: getTranslation(language, 'ministries.list.praiseWorship.exploreButton'),
     },
     {
       id: 'ccc',
@@ -66,11 +68,15 @@ export default function Ministries() {
       color: 'from-cyan-400 to-cyan-600',
       slides: [
         {
-          image: '/images/ministries/crossworlds-center/01.jpeg',
+          image: '/images/ministries/crossworlds-center/a.jpeg',
           text: getTranslation(language, 'ministries.list.ccc.fullContent'),
         },
         {
-          image: '/images/ministries/crossworlds-center/02.jpeg',
+          image: '/images/ministries/crossworlds-center/bb.jpeg',
+          text: getTranslation(language, 'ministries.list.ccc.fullContent'),
+        },
+        {
+          image: '/images/ministries/crossworlds-center/c.jpeg',
           text: getTranslation(language, 'ministries.list.ccc.fullContent'),
         },
         {
@@ -92,23 +98,27 @@ export default function Ministries() {
       color: 'from-amber-400 to-amber-600',
       slides: [
         {
-          image: '/images/ministries/roots-and-routes/01.jpg',
+          image: '/images/ministries/roots-and-routes/1.jpeg',
           text: getTranslation(language, 'ministries.list.roots.fullContent'),
         },
         {
-          image: '/images/ministries/roots-and-routes/02.jpg',
+          image: '/images/ministries/roots-and-routes/5.jpg',
           text: getTranslation(language, 'ministries.list.roots.fullContent'),
         },
         {
-          image: '/images/ministries/roots-and-routes/03.jpg',
+          image: '/images/ministries/roots-and-routes/06.jpg',
           text: getTranslation(language, 'ministries.list.roots.fullContent'),
         },
         {
-          image: '/images/ministries/roots-and-routes/04.jpeg',
+          image: '/images/ministries/roots-and-routes/7.jpeg',
+          text: getTranslation(language, 'ministries.list.roots.fullContent'),
+        },
+        {
+          image: '/images/ministries/roots-and-routes/8.jpg',
           text: getTranslation(language, 'ministries.list.roots.fullContent'),
         },
       ],
-      exploreLink: '/about',
+      exploreLink: '/contact',
       exploreButton: getTranslation(language, 'ministries.list.roots.aboutButton'),
     },
   ];

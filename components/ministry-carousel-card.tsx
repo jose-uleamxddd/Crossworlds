@@ -70,7 +70,7 @@ export default function MinistryCarouselCard({
         <div className="p-6 md:p-8 flex flex-col justify-center bg-gradient-to-br from-white to-[#0b5298]/5">
           <div className="relative">
             <div className="max-h-[320px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-[#0b5298]/30 scrollbar-track-transparent hover:scrollbar-thumb-[#0b5298]/50">
-              <div className="prose prose-sm max-w-none text-foreground/80 whitespace-pre-line leading-relaxed text-sm md:text-base pb-4">
+              <div className="prose prose-sm max-w-none text-foreground/80 whitespace-pre-line leading-relaxed text-sm md:text-base pb-4 [&>br]:mb-3">
                 {slides[currentSlide].text}
               </div>
             </div>
