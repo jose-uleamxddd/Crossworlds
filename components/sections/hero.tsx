@@ -16,7 +16,7 @@ export default function Hero() {
   {/* Background Image */}
   <div className="absolute inset-0 z-0">
     <img 
-      src="https://hldpvkbebodmtiajldjg.supabase.co/storage/v1/object/public/Imagenes/Home/Gemini_Generated_Image_9oetkn9oetkn9oet.png"
+      src="/images/home/hero-background.png"
       alt="CrossWorlds Background"
       className="w-full h-full object-cover"
     />

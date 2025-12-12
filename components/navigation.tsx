@@ -4,16 +4,12 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 import LanguageToggle from './language-toggle';
-import { getImageUrl } from '@/lib/supabase';
 import { useLanguage } from '@/lib/language-context';
 import { getTranslation } from '@/lib/get-translation';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const { language } = useLanguage();
-  
-  // Get logo from Supabase
-  const logoUrl = getImageUrl('Imagenes', 'Favicon', 'logo_cross-removebg-preview.png');
 
   const navItems = [
     { label: getTranslation(language, 'nav.home'), href: '/' },
@@ -29,7 +25,7 @@ export default function Navigation() {
       {/* Logo */}
       <Link href="/" className="flex items-center space-x-3 group">
         <img 
-          src={logoUrl || '/logo_cross-removebg-preview.png'}
+          src="/images/logos/logo_cross-removebg-preview.png"
           alt="Crossworlds Connection" 
           className="h-12 w-auto object-contain group-hover:scale-105 transition-transform"
         />

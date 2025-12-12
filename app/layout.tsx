@@ -7,17 +7,13 @@ import './globals.css'
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
-const faviconUrl = process.env.NEXT_PUBLIC_SUPABASE_URL 
-  ? `${process.env.NEXT_PUBLIC_SUPABASE_URL}/storage/v1/object/public/Imagenes/Favicon/logo_cross-removebg-preview.png`
-  : '/logo_cross-removebg-preview.png';
-
 export const metadata: Metadata = {
   title: 'Crossworlds Connection - Music & English with Spiritual Growth',
   description: 'When worlds cross language connects. Join our Christian academy where music and English education go hand in hand with spiritual growth.',
   generator: 'v0.app',
   icons: {
-    icon: faviconUrl,
-    apple: faviconUrl,
+    icon: '/images/logos/logo_cross-removebg-preview.png',
+    apple: '/images/logos/logo_cross-removebg-preview.png',
   },
   openGraph: {
     title: 'Crossworlds Connection - Music & English Education',

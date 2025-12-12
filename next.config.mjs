@@ -4,7 +4,8 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    // Ya no necesitamos remotePatterns porque usamos imágenes locales
+    qualities: [75, 85],
   },
 }
 

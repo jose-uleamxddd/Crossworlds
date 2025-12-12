@@ -17,12 +17,27 @@ export default function Ministries() {
       color: 'from-blue-400 to-blue-600',
       slides: [
         {
-          image: '/sewing-ministry-classroom.jpg',
+          image: '/images/ministries/coser-para-vivir/01.jpeg',
+          text: getTranslation(language, 'ministries.list.sewing.fullContent'),
+        },
+        {
+          image: '/images/ministries/coser-para-vivir/02.jpeg',
+          text: getTranslation(language, 'ministries.list.sewing.fullContent'),
+        },
+        {
+          image: '/images/ministries/coser-para-vivir/03.jpeg',
+          text: getTranslation(language, 'ministries.list.sewing.fullContent'),
+        },
+        {
+          image: '/images/ministries/coser-para-vivir/04.jpeg',
+          text: getTranslation(language, 'ministries.list.sewing.fullContent'),
+        },
+        {
+          image: '/images/ministries/coser-para-vivir/05.jpeg',
           text: getTranslation(language, 'ministries.list.sewing.fullContent'),
         },
       ],
       donationLink: getTranslation(language, 'ministries.list.sewing.donationLink'),
-      supabaseFolder: 'ministries/coser para vivir',
     },
     {
       id: 'praise-worship',
@@ -31,11 +46,18 @@ export default function Ministries() {
       color: 'from-purple-400 to-purple-600',
       slides: [
         {
-          image: '/worship-camp.jpg',
+          image: '/images/ministries/praise-worship-camp/01.jpeg',
+          text: getTranslation(language, 'ministries.list.praiseWorship.fullContent'),
+        },
+        {
+          image: '/images/ministries/praise-worship-camp/02.jpeg',
+          text: getTranslation(language, 'ministries.list.praiseWorship.fullContent'),
+        },
+        {
+          image: '/images/ministries/praise-worship-camp/03.jpeg',
           text: getTranslation(language, 'ministries.list.praiseWorship.fullContent'),
         },
       ],
-      supabaseFolder: 'ministries/Praise & Worship Camp',
     },
     {
       id: 'ccc',
@@ -44,13 +66,24 @@ export default function Ministries() {
       color: 'from-cyan-400 to-cyan-600',
       slides: [
         {
-          image: '/ccc-building.jpg',
+          image: '/images/ministries/crossworlds-center/01.jpeg',
+          text: getTranslation(language, 'ministries.list.ccc.fullContent'),
+        },
+        {
+          image: '/images/ministries/crossworlds-center/02.jpeg',
+          text: getTranslation(language, 'ministries.list.ccc.fullContent'),
+        },
+        {
+          image: '/images/ministries/crossworlds-center/03.jpeg',
+          text: getTranslation(language, 'ministries.list.ccc.fullContent'),
+        },
+        {
+          image: '/images/ministries/crossworlds-center/04.jpeg',
           text: getTranslation(language, 'ministries.list.ccc.fullContent'),
         },
       ],
       exploreLink: '/ministries/ecuador-ministries',
       exploreButton: getTranslation(language, 'ministries.list.ccc.exploreButton'),
-      supabaseFolder: 'ministries/Crossworlds Center for connections',
     },
     {
       id: 'roots-and-routes',
@@ -59,11 +92,22 @@ export default function Ministries() {
       color: 'from-amber-400 to-amber-600',
       slides: [
         {
-          image: '/family-gathering-nature.jpg',
+          image: '/images/ministries/roots-and-routes/01.jpg',
+          text: getTranslation(language, 'ministries.list.roots.fullContent'),
+        },
+        {
+          image: '/images/ministries/roots-and-routes/02.jpg',
+          text: getTranslation(language, 'ministries.list.roots.fullContent'),
+        },
+        {
+          image: '/images/ministries/roots-and-routes/03.jpg',
+          text: getTranslation(language, 'ministries.list.roots.fullContent'),
+        },
+        {
+          image: '/images/ministries/roots-and-routes/04.jpeg',
           text: getTranslation(language, 'ministries.list.roots.fullContent'),
         },
       ],
-      supabaseFolder: 'ministries/roots and routes',
       exploreLink: '/about',
       exploreButton: getTranslation(language, 'ministries.list.roots.aboutButton'),
     },

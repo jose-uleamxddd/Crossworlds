@@ -2,67 +2,20 @@
 
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { getImageUrl, listImages } from '@/lib/supabase';
 import Image from 'next/image';
 
 interface ImageCarouselProps {
-  bucket: string;
-  folder: string;
+  images: string[]; // Array de rutas de imágenes locales
   className?: string;
   autoPlayInterval?: number;
 }
 
 export default function ImageCarousel({
-  bucket,
-  folder,
+  images,
   className = '',
   autoPlayInterval = 5000,
 }: ImageCarouselProps) {
-  const [images, setImages] = useState<string[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isLoading, setIsLoading] = useState(true);
-
-  // Función para obtener URL optimizada con transformaciones de Supabase
-  const getOptimizedImageUrl = (url: string, width: number = 1200) => {
-    // Supabase Image Transformations: redimensionar y convertir a WebP
-    const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-    if (url.includes(supabaseUrl!)) {
-      return `${url}?width=${width}&quality=85&format=webp`;
-    }
-    return url;
-  };
-
-  useEffect(() => {
-    async function loadImages() {
-      try {
-        const imageList = await listImages(bucket, folder);
-        const urls = imageList.map((img) => getImageUrl(bucket, folder, img.name));
-        setImages(urls);
-      } catch (error) {
-        console.error('Error loading images:', error);
-      } finally {
-        setIsLoading(false);
-      }
-    }
-    loadImages();
-  }, [bucket, folder]);
-
-  // Precarga inteligente: siguiente y anterior
-  useEffect(() => {
-    if (images.length === 0) return;
-    
-    const nextIndex = (currentIndex + 1) % images.length;
-    const prevIndex = (currentIndex - 1 + images.length) % images.length;
-    
-    // Precargar imágenes adyacentes
-    [nextIndex, prevIndex].forEach(index => {
-      const link = document.createElement('link');
-      link.rel = 'prefetch';
-      link.as = 'image';
-      link.href = getOptimizedImageUrl(images[index]);
-      document.head.appendChild(link);
-    });
-  }, [currentIndex, images]);
 
   useEffect(() => {
     if (images.length === 0) return;
@@ -86,17 +39,7 @@ export default function ImageCarousel({
     setCurrentIndex(index);
   };
 
-  if (isLoading) {
-    return (
-      <div className={`bg-muted animate-pulse rounded-lg ${className}`}>
-        <div className="w-full h-full flex items-center justify-center">
-          <p className="text-muted-foreground">Cargando imágenes...</p>
-        </div>
-      </div>
-    );
-  }
-
-  if (images.length === 0) {
+  if (!images || images.length === 0) {
     return (
       <div className={`bg-muted rounded-lg ${className}`}>
         <div className="w-full h-full flex items-center justify-center">
@@ -111,7 +54,7 @@ export default function ImageCarousel({
       {/* Main Image */}
       <div className="relative w-full h-full overflow-hidden rounded-lg bg-gray-100">
         <Image
-          src={getOptimizedImageUrl(images[currentIndex])}
+          src={images[currentIndex]}
           alt={`Slide ${currentIndex + 1}`}
           fill
           className="object-cover transition-opacity duration-500"
@@ -119,7 +62,6 @@ export default function ImageCarousel({
           loading={currentIndex === 0 ? 'eager' : 'lazy'}
           quality={85}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
-          unoptimized={false}
         />
         
         {/* Overlay gradient */}

@@ -114,8 +114,13 @@ export default function About() {
             <div className="relative">
               <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-3xl">
                 <ImageCarousel
-                  bucket="Imagenes"
-                  folder="Home"
+                  images={[
+                    '/images/about us/01.jpeg',
+                    '/images/about us/02.jpeg',
+                    '/images/about us/03.jpeg',
+                    '/images/about us/04.jpeg',
+                    '/images/about us/05.jpeg',
+                  ]}
                   className="h-full"
                   autoPlayInterval={4000}
                 />

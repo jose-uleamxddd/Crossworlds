@@ -17,11 +17,10 @@ export default function EcuadorMinistries() {
       color: 'from-purple-400 to-purple-600',
       slides: [
         {
-          image: '/choir-and-musicians-performing.jpg',
+          image: '/images/ministries/high-notes-high-hopes/01.jpeg',
           text: getTranslation(language, 'ministries.list.music.fullContent'),
         },
       ],
-      supabaseFolder: 'High Notes & High Hopes',
     },
     {
       id: 'youth-ministry',
@@ -42,11 +41,10 @@ export default function EcuadorMinistries() {
       color: 'from-green-400 to-green-600',
       slides: [
         {
-          image: '/english-class-students.jpg',
+          image: '/images/ministries/giving-new-life/01.jpeg',
           text: getTranslation(language, 'ministries.list.english.fullContent'),
         },
       ],
-      supabaseFolder: 'ministries/giving new life',
     },
   ];
 

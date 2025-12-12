@@ -180,8 +180,8 @@ export const translations = {
       subtitle: 'Your donation helps us provide quality education united with spiritual growth',
       enterEmail: 'Enter your email',
       emailPlaceholder: 'your@email.com',
-      donateNow: 'Donate on GoFundMe',
-      secureMessage: 'You will be redirected to GoFundMe to complete your donation securely.',
+      donateNow: 'Click here to support crossworlds',
+      secureMessage: 'You will be redirected to Zeffy to complete your donation securely.',
     },
     cta: {
       title: 'Ready to Join Our Community?',
@@ -424,8 +424,8 @@ export const translations = {
       subtitle: 'Tu donación nos ayuda a proporcionar educación de calidad unida con crecimiento espiritual',
       enterEmail: 'Ingresa tu correo',
       emailPlaceholder: 'tu@correo.com',
-      donateNow: 'Donar en GoFundMe',
-      secureMessage: 'Serás redirigido a GoFundMe para completar tu donación de forma segura.',
+      donateNow: 'Apoyanos',
+      secureMessage: 'Serás redirigido a Zeffy para completar tu donación de forma segura.',
     },
     cta: {
       title: '¿Listo para Unirte a Nuestra Comunidad?',

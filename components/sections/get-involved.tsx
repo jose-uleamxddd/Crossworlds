@@ -53,7 +53,7 @@ export default function GetInvolved() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://hldpvkbebodmtiajldjg.supabase.co/storage/v1/object/public/Imagenes/Home/WhatsApp%20Image%202025-12-05%20at%203.58.08%20PM.jpeg"
+          src="/images/home/get-involved-background.jpg"
           alt="Get Involved Background"
           className="w-full h-full object-cover"
         />
