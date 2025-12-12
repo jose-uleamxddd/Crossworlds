@@ -123,7 +123,7 @@ export const translations = {
         },
         praiseWorship: {
           title: 'Praise & Worship Camp',
-          subtitle: 'Annual Summer Music Camp',
+          subtitle: 'Music, Faith, and Fun.',
           description: 'An annual week-long summer camp where children discover the joy of music and worship.',
           fullContent: 'Each summer, CrossWorlds hosts a vibrant week-long Praise & Worship Camp for children in the community. This free camp combines music training, worship experience, and faith formation in a joyful, encouraging environment.\n\nChildren learn:\n• Basic music skills (rhythm, singing, instruments)\n• Songs of worship in Spanish and English\n• Teamwork and confidence through performance\n• Biblical truths through music and stories\n\nThe week culminates in a celebration concert where families gather to see their children shine. For many kids, this camp is their first experience of being celebrated, encouraged, and loved — and it plants seeds of faith that last a lifetime.',
           exploreButton: 'Contact Us to Join',
@@ -133,7 +133,7 @@ export const translations = {
           subtitle: 'Transforming Lives, Connecting Worlds.',
           description: 'The CrossWorlds Center for Connections (CCC) in Manta, Ecuador is more than a building — it is a place and space where lives intersect, hope grows, and God\'s love becomes visible.',
           fullContent: 'At CrossWorlds, creemos (we believe) that lasting transformation happens through genuine connection… through relationships. We are a Christian foundation dedicated to fostering spiritual, social, and academic growth by serving the Manta community. Our Center acts as a point of connection, bringing cultures together to share gifts, skills, and the eternal hope of the Gospel.\n\nOur Ministries\n\nThe Center for Connections achieves its mission through specific, impactful programs:\n\n• Giving New Life (Community Outreach)\n• The English Language Ministry (Global Skills, Connection)\n• Tesoros Del Rey (Worship Band Ministry)\n• High Notes & High Hope (Arts and Music Ministry)\n• Training Seminars (Leadership, Skills, Future)\n• And coming in 2026, XP3',
-          exploreButton: 'Explore CCC Ministries',
+          exploreButton: 'Explore Crossworlds Connections Ministries',
         },
       },
     },
@@ -366,7 +366,7 @@ export const translations = {
         },
         praiseWorship: {
           title: 'Campamento de Alabanza y Adoración',
-          subtitle: 'Campamento Musical de Verano',
+          subtitle: 'Musica, Fe y Diversión.',
           description: 'Un campamento anual de una semana donde los niños descubren la alegría de la música y la adoración.',
           fullContent: 'Cada verano, CrossWorlds organiza un vibrante Campamento de Alabanza y Adoración de una semana para niños de la comunidad. Este campamento gratuito combina capacitación musical, experiencia de adoración y formación de fe en un ambiente alegre y alentador.\n\nLos niños aprenden:\n• Habilidades musicales básicas (ritmo, canto, instrumentos)\n• Canciones de adoración en español e inglés\n• Trabajo en equipo y confianza a través de presentaciones\n• Verdades bíblicas a través de la música e historias\n\nLa semana culmina en un concierto de celebración donde las familias se reúnen para ver brillar a sus hijos. Para muchos niños, este campamento es su primera experiencia de ser celebrados, alentados y amados — y planta semillas de fe que duran toda la vida.',
           exploreButton: 'Contáctanos para Unirte',

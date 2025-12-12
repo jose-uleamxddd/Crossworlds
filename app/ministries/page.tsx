@@ -33,7 +33,7 @@ export default function Ministries() {
           text: getTranslation(language, 'ministries.list.sewing.fullContent'),
         },
         {
-          image: '/images/ministries/coser-para-vivir/05.jpeg',
+          image: '/images/ministries/coser-para-vivir/image.png',
           text: getTranslation(language, 'ministries.list.sewing.fullContent'),
         },
       ],
@@ -46,15 +46,15 @@ export default function Ministries() {
       color: 'from-cyan-400 to-cyan-600',
       slides: [
         {
-          image: '/images/ministries/praise-worship-camp/01.jpeg',
-          text: getTranslation(language, 'ministries.list.praiseWorship.fullContent'),
-        },
-        {
           image: '/images/ministries/praise-worship-camp/02.jpeg',
           text: getTranslation(language, 'ministries.list.praiseWorship.fullContent'),
         },
         {
           image: '/images/ministries/praise-worship-camp/03.jpeg',
+          text: getTranslation(language, 'ministries.list.praiseWorship.fullContent'),
+        },
+        {
+          image: '/images/ministries/praise-worship-camp/04.jpeg',
           text: getTranslation(language, 'ministries.list.praiseWorship.fullContent'),
         },
       ],
