@@ -20,6 +20,18 @@ export default function EcuadorMinistries() {
           image: '/images/ministries/high-notes-high-hopes/01.jpeg',
           text: getTranslation(language, 'ministries.list.music.fullContent'),
         },
+        {
+          image: '/images/ministries/high-notes-high-hopes/02.jpeg',
+          text: getTranslation(language, 'ministries.list.music.fullContent'),
+        },
+        {
+          image: '/images/ministries/high-notes-high-hopes/03.jpeg',
+          text: getTranslation(language, 'ministries.list.music.fullContent'),
+        },
+        {
+          image: '/images/ministries/high-notes-high-hopes/04.jpeg',
+          text: getTranslation(language, 'ministries.list.music.fullContent'),
+        },
       ],
     },
     {
@@ -29,7 +41,15 @@ export default function EcuadorMinistries() {
       color: 'from-pink-400 to-pink-600',
       slides: [
         {
-          image: '/youth-group-gathering.jpg',
+          image: '/images/ministries/high-notes-high-hopes/01.jpeg',
+          text: getTranslation(language, 'ministries.list.youth.fullContent'),
+        },
+        {
+          image: '/images/ministries/high-notes-high-hopes/02.jpeg',
+          text: getTranslation(language, 'ministries.list.youth.fullContent'),
+        },
+        {
+          image: '/images/ministries/high-notes-high-hopes/03.jpeg',
           text: getTranslation(language, 'ministries.list.youth.fullContent'),
         },
       ],
@@ -42,6 +62,14 @@ export default function EcuadorMinistries() {
       slides: [
         {
           image: '/images/ministries/giving-new-life/01.jpeg',
+          text: getTranslation(language, 'ministries.list.english.fullContent'),
+        },
+        {
+          image: '/images/ministries/giving-new-life/02.png',
+          text: getTranslation(language, 'ministries.list.english.fullContent'),
+        },
+        {
+          image: '/images/ministries/giving-new-life/03.jpeg',
           text: getTranslation(language, 'ministries.list.english.fullContent'),
         },
       ],
