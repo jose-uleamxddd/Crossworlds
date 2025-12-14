@@ -23,19 +23,6 @@ export default function DonationSection() {
         </div>
 
         <div className="bg-background rounded-lg p-8 shadow-lg">
-          <div className="mb-6">
-            <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-              {getTranslation(language, 'donation.enterEmail')}
-            </label>
-            <input
-              id="email"
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder={getTranslation(language, 'donation.emailPlaceholder')}
-              className="w-full px-4 py-3 border-2 border-border rounded-lg bg-background text-foreground focus:outline-none focus:border-primary"
-            />
-          </div>
 
           <a
             href="https://www.zeffy.com/en-US/donation-form/2025-purpose-and-hope"

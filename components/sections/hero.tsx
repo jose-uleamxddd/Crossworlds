@@ -55,14 +55,14 @@ export default function Hero() {
 
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <a
-          href="/get-involved"
-          className="px-8 py-3 bg-white text-[#0b5298] font-semibold rounded-lg hover:bg-white/80 transition-colors"
+          href="/ministries"
+          className="px-8 py-3 bg-white text-[#0b5298] font-semibold rounded-lg hover:bg-white/90 transition-all hover:scale-105 shadow-lg hover:shadow-xl"
         >
           {getTranslation(language, 'home.cta1')}
         </a>
         <a
           href="/about"
-          className="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#0b5298] transition-colors"
+          className="px-8 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-[#0b5298] transition-all hover:scale-105 shadow-lg"
         >
           {getTranslation(language, 'home.cta2')}
         </a>

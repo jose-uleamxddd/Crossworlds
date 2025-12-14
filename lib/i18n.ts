@@ -1,5 +1,3 @@
-import { title } from "process";
-
 export const translations = {
   en: {
     nav: {
@@ -80,7 +78,7 @@ export const translations = {
       learnMore: 'Learn More',
       list: {
         sewing: {
-          title: 'Coser para Vivir',
+          title: 'Made to Sew. Called to Serve.',
           subtitle: 'Sewing to Live',
           description: 'Coser Para Vivir — Sewing to Live — is transforming lives in Ecuador.',
           fullContent: 'At CrossWorlds Connections, we believe every stitch can tell a story of hope. Our sewing ministry, Coser Para Vivir, was born out of a vision to equip vulnerable women—single mothers, widows, migrants, and those seeking freedom from cycles of poverty and exploitation—with skills that restore dignity and open doors to a new future.\n\nWhat began in 2019 has now grown into a vibrant program where women are learning to sew with excellence, develop micro-business skills, and grow in confidence and faith. Coser Para Vivir is more than sewing classes. It\'s a safe place where women find community, discover their God-given worth, and experience spiritual renewal.\n\nEach graduate receives entrepreneurial training, along with a sewing machine and starter materials, empowering her to launch her own micro-business and provide for her family with dignity. As thousands across Latin America remain vulnerable to poverty and sex trafficking, programs like Coser Para Vivir stand as a tangible response—giving women a pathway out of risk and into purpose.\n\nVision Statement: "Teach sewing with excellence while empowering women to provide for their families, grow in confidence and faith, and live transformed lives for eternity."',
@@ -90,19 +88,25 @@ export const translations = {
           title: 'High Notes & High Hopes',
           subtitle: 'Music Ministry',
           description: 'High Notes & High Hopes is more than music classes — it\'s about inspiring worship and shaping lives.',
-          fullContent: '• Music training builds focus, teamwork, and confidence.\n• Faith formation through worship and Scripture strengthens spiritual roots.\n• Students are equipped to use their gifts for God\'s service and impact others.\n\nRaising musicians who worship with excellence.',
+          fullContent: 'The High Notes & High Hope ministry uses the power of musical excellence to transform lives. We teach wholesome genres of music, knowing that organized programs build character, improve academic performance, and foster well-adjusted children.\n\nOur high-quality instruction is delivered to hundreds of students, including those in the local Christian school and children\'s shelters. We prayerfully incorporate praise and worship music into our curriculum and share the Gospel as the Holy Spirit leads, giving every child the skills and the hope they need.\n\nYour support directly funds scholarships that give children from impoverished families access to this life-changing instruction.\n\n**#HighNotesHighHope** **#MusicalExcellence** **#CharacterThroughCreativity** **#ScholarshipOfHope**',
         },
         youth: {
           title: 'Tesoros del Rey',
           subtitle: 'Treasures of the King',
           description: 'Tesoros del Rey (TDR) — the flagship band of High Notes & High Hopes.',
-          fullContent: 'A worship band of musicians under 21 who glorify God through music that inspires everyone to follow Christ.\n\nThey perform current Christian songs, write their own music, and pursue excellence in every note — lifting hearts to Jesus.\n\nMusic that lifts hearts to Jesus.',
+          fullContent: 'Tesoros Del Rey is the premier ministry outreach of our High Notes & High Hope program, focusing on advanced student development. This worship band is comprised primarily of teenagers (ages 13 to 21) who demonstrate exceptional musical skill, strong Christian character, and a burning desire to share Jesus. Band members are selected by audition and serve as powerful youth leaders, performing outreach in churches, schools, and public events. They lead worship for our annual Camp and actively mentor younger students, completing a discipleship cycle that transforms students into confident, skillful, and committed servant leaders for the next generation.\n\n**#TesorosDelRey** **#TeenWorshipLeaders** **#FromSkillToService** **#YouthInMinistry**',
         },
         english: {
           title: 'Giving New Life',
-          subtitle: 'Dando Nueva Vida',
+          subtitle: 'A New Language, A New Life',
           description: 'Giving New Life offers free English classes for children and teenagers.',
-          fullContent: 'University students gain valuable teaching experience.\n• Children and youth discover new skills and confidence.\n• Together, we celebrate the truth: "A new language is a new life."\n\nWords that Open Worlds.',
+          fullContent: 'The saying is true: "When you learn a new language, you receive a new life." Through Giving New Life, we provide free, high-quality English classes to children and teens (ages 8–17).\n\nWe maintain a strategic agreement with a local university, allowing advanced education students to earn their required community service hours by teaching in our program. This provides the children with excellent instruction and allows our ministry to build lasting, life-changing relationships with future educators, truly fulfilling the mission of giving new life and building the next generation of leaders.\n\n**#GivingNewLife** **#NewLanguageNewLife** **#MentoringFutureEducators**',
+        },
+        xp3: {
+          title: 'XP3',
+          subtitle: 'Answering Life\'s Big Questions',
+          description: 'Every teenager and young adult wrestles with three essential questions: Who am I? Where do I fit in? What difference can I make?',
+          fullContent: 'Every teenager and young adult wrestles with three essential questions: Who am I? Where do I fit in? What difference can I make? Launching in Q1 2026, the XP3 ministry is designed to answer these questions through the unchanging truth of Christ. We help our students find a secure Identity as children of God, experience genuine Belonging in a supportive family of faith, and discover their God-given Purpose to serve as the light of the world. XP3 is our proactive strategy to equip the next generation with the inner strength and mission they need to thrive.\n\n**#IdentityBelongingPurpose** **#NextGenDiscipleship**',
         },
         giving: {
           title: 'Giving Ministry',
@@ -118,21 +122,21 @@ export const translations = {
           title: 'Roots & Routes',
           subtitle: 'Service. Learning. Transformation.',
           description: 'Roots & Routes invites you to discover your foundations in Christ and community, while exploring new routes of service, learning, and global friendship. Join us for mutual transformation through short-term Mission Trips, Internships, Mentoring, and Gap Years, experiencing God\'s family across cultures.',
-          fullContent: 'Roots keep us grounded in who we are. Routes lead us into new places and opportunities. At CrossWorlds, our intercultural exchange programs invite you to discover both: finding your roots in Christ and community, while walking new routes of service, learning, and global friendship.\n\nIntercultural exchange is about mutual transformation: lives are changed as participants grow in faith and perspective, and local communities are encouraged, strengthened, and blessed through the gifts and presence of those who come to serve.\n\nProgram Opportunities:\n\n1. Mission Trips & Camp Teams\nJoin a short-term mission trip or serve with a summer camp team in Ecuador. Share life, faith, and encouragement with students, families, and local churches while experiencing God\'s family across cultures.\n\n2. Internships (Short-Term & Long-Term)\nWe offer programs for 3–6 months (a semester of service and language immersion) and 1–2 years (a deeper journey of growth and leadership development). Interns may also receive academic credit hours for their service.\n\n3. Gap Year Opportunities\nTake a purposeful pause before your next step in life. Whether between high school and college, or after graduation, a gap year allows you to serve, explore God\'s calling, and return home with renewed clarity and direction.\n\n4. Mentoring with Experience\nBaby boomers and retirees can use their professional skills and life experience to strengthen ministries and mentor younger leaders. Your wisdom and presence can leave a lasting legacy.\n\n5. Summer Routes (4–8 Weeks)\nThis is a focused opportunity for college students and young adults to grow while experiencing Ecuador. You can Teach your skills in community programs, Travel to explore the culture, and Transform yourself and the communities you serve.\n\nWhether for a week, a summer, or a year, Roots & Routes is about belonging to God\'s global family, serving with joy, and discovering the new routes God has prepared for your life.',
+          fullContent: 'Roots keep us grounded in who we are. Routes lead us into new places and opportunities. At CrossWorlds, our intercultural exchange programs invite you to discover both: finding your roots in Christ and community, while walking new routes of service, learning, and global friendship.\n\nIntercultural exchange is about mutual transformation: lives are changed as participants grow in faith and perspective, and local communities are encouraged, strengthened, and blessed through the gifts and presence of those who come to serve.\n\nProgram Opportunities:\n\n1. Mission Trips & Camp Teams\nJoin a short-term mission trip or serve with a summer camp team in Ecuador. Share life, faith, and encouragement with students, families, and local churches while experiencing God\'s family across cultures.\n\n2. Internships (Short-Term & Long-Term)\nWe offer programs for 3–6 months (a semester of service and language immersion) and 1–2 years (a deeper journey of growth and leadership development). Interns may also receive academic credit hours for their service.\n\n3. Gap Year Opportunities\nTake a purposeful pause before your next step in life. Whether between high school and college, or after graduation, a gap year allows you to serve, explore God\'s calling, and return home with renewed clarity and direction.\n\n4. Mentoring with Experience\nBaby boomers and retirees can use their professional skills and life experience to strengthen ministries and mentor younger leaders. Your wisdom and presence can leave a lasting legacy.\n\n5. Summer Routes (4–8 Weeks)\nThis is a focused opportunity for college students and young adults to grow while experiencing Ecuador. You can Teach your skills in community programs, Travel to explore the culture, and Transform yourself and the communities you serve.\n\nWhether for a week, a summer, or a year, Roots & Routes is about belonging to God\'s global family, serving with joy, and discovering the new routes God has prepared for your life. \n\n **#RootsAndRoutes**  **#NewFriendsNewRoutes**  **#LifeChangingRoutes**  **#GoServeGrow **',
           aboutButton: 'Explore Roots & Routes',
         },
         praiseWorship: {
           title: 'Praise & Worship Camp',
           subtitle: 'Music, Faith, and Fun.',
           description: 'An annual week-long summer camp where children discover the joy of music and worship.',
-          fullContent: 'Each summer, CrossWorlds hosts a vibrant week-long Praise & Worship Camp for children in the community. This free camp combines music training, worship experience, and faith formation in a joyful, encouraging environment.\n\nChildren learn:\n• Basic music skills (rhythm, singing, instruments)\n• Songs of worship in Spanish and English\n• Teamwork and confidence through performance\n• Biblical truths through music and stories\n\nThe week culminates in a celebration concert where families gather to see their children shine. For many kids, this camp is their first experience of being celebrated, encouraged, and loved — and it plants seeds of faith that last a lifetime.',
+          fullContent: 'Our free, annual Praise & Worship Camp is an intense and joyful week that serves as a powerful cross-cultural exchange. This camp is 100% free for every child, reaching those from impoverished families who could never afford a faith-based camp experience. Visiting students and adults from North America partner with local leaders, sharing their unique cultures, their deep faith, and their passion for music.\n\nThe camp\'s true, life-altering power lies in the unconditional love demonstrated: for a child who feels unseen or believes they are worthless, this is the place where they are celebrated and discover their true value in God\'s eyes. We collaborate with local churches to identify the children and ensure follow-up, extending the love and ministry to the child\'s family long after camp ends.\n\nThe week culminates in a vibrant, high-energy celebration concert where families and the entire community gather to witness their children shine brightly. This unforgettable moment plants seeds of faith that blossom into transformed young lives and lasting global friendships, all made possible by our generous supporters.\n\n**#WorshipLoudLiveBold** **#JoinACampTeam**',
           exploreButton: 'Contact Us to Join',
         },
         ccc: {
           title: 'CrossWorlds Center for Connections',
           subtitle: 'Transforming Lives, Connecting Worlds.',
           description: 'The CrossWorlds Center for Connections (CCC) in Manta, Ecuador is more than a building — it is a place and space where lives intersect, hope grows, and God\'s love becomes visible.',
-          fullContent: 'At CrossWorlds, creemos (we believe) that lasting transformation happens through genuine connection… through relationships. We are a Christian foundation dedicated to fostering spiritual, social, and academic growth by serving the Manta community. Our Center acts as a point of connection, bringing cultures together to share gifts, skills, and the eternal hope of the Gospel.\n\nOur Ministries\n\nThe Center for Connections achieves its mission through specific, impactful programs:\n\n• Giving New Life (Community Outreach)\n• The English Language Ministry (Global Skills, Connection)\n• Tesoros Del Rey (Worship Band Ministry)\n• High Notes & High Hope (Arts and Music Ministry)\n• Training Seminars (Leadership, Skills, Future)\n• And coming in 2026, XP3',
+          fullContent: 'At CrossWorlds, creemos (we believe) that lasting transformation happens through genuine connection… through relationships. We are a Christian foundation dedicated to fostering spiritual, social, and academic growth by serving the Manta community. Our Center acts as a point of connection, bringing cultures together to share gifts, skills, and the eternal hope of the Gospel.\n\nOur Ministries\n\nThe Center for Connections achieves its mission through specific, impactful programs:\n\n• Giving New Life (Community Outreach)\n• The English Language Ministry (Global Skills, Connection)\n• Tesoros Del Rey (Worship Band Ministry)\n• High Notes & High Hope (Arts and Music Ministry)\n• Training Seminars (Leadership, Skills, Future)\n• And coming in 2026, XP3 \n\n **#TransformingForEternity**  **#ServingToLead**   **#GospelThroughAction**    **#CrossCulturalFaith**',
           exploreButton: 'Explore Crossworlds Connections Ministries',
         },
       },
@@ -166,7 +170,7 @@ export const translations = {
         subjectEnrollment: 'Coser para vivir',
         subjectVolunteering: 'Roots and routes',
         subjectDonation: 'Crossworlds Center for Connections',
-        subjectOther: 'Prise and Worship Camp',
+        subjectOther: 'Praise and Worship Camp',
         subjectOther2: 'Other',
         message: 'Your Message',
         messagePlaceholder: 'Your message here...',
@@ -189,12 +193,6 @@ export const translations = {
       subtitle: 'Take the first step toward combining education with spiritual growth.',
       contact: 'Contact Us',
       exploreMinistries: 'Explore Ministries',
-    },
-    footer: {
-      tagline: 'When worlds cross, language connects',
-      quickLinks: 'Quick Links',
-      followUs: 'Follow Us',
-      rights: 'All rights reserved.',
     },
     getInvolved: {
       title: 'Get Involved',
@@ -324,7 +322,7 @@ export const translations = {
       list: {
         sewing: {
           title: 'Coser para Vivir',
-          subtitle: 'Sewing to Live',
+          subtitle: 'Hecho para Coser. Llamado para Servir.',
           description: 'Coser Para Vivir — Sewing to Live — está transformando vidas en Ecuador.',
           fullContent: 'Coser Para Vivir: Cosiendo para Vivir\n\nEn CrossWorlds Connections, creemos que cada puntada puede contar una historia de esperanza. Nuestro ministerio de costura, Coser Para Vivir, nació de una visión de equipar a mujeres vulnerables—madres solteras, viudas, migrantes y aquellas que buscan liberarse de ciclos de pobreza y explotación—con habilidades que restauran la dignidad y abren puertas a un nuevo futuro.\n\nLo que comenzó en 2019 ahora se ha convertido en un programa vibrante donde las mujeres están aprendiendo a coser con excelencia, desarrollar habilidades de microempresa y crecer en confianza y fe. Coser Para Vivir es más que clases de costura. Es un lugar seguro donde las mujeres encuentran comunidad, descubren su valor dado por Dios y experimentan renovación espiritual.\n\nCada graduada recibe capacitación empresarial, junto con una máquina de coser y materiales iniciales, empoderándola para lanzar su propia microempresa y proveer para su familia con dignidad. Mientras miles en América Latina permanecen vulnerables a la pobreza y la trata de personas, programas como Coser Para Vivir se presentan como una respuesta tangible—dando a las mujeres un camino fuera del riesgo y hacia el propósito.\n\nDeclaración de Visión: "Enseñar costura con excelencia mientras empoderamos a las mujeres para proveer a sus familias, crecer en confianza y fe, y vivir vidas transformadas para la eternidad."',
           donationLink: 'https://www.zeffy.com/en-US/donation-form/coser-para-vivir--2025',
@@ -333,49 +331,45 @@ export const translations = {
           title: 'Notas Altas & Grandes Esperanzas',
           subtitle: 'High Notes & High Hopes',
           description: 'Notas Altas & Grandes Esperanzas es más que clases de música — se trata de inspirar adoración y moldear vidas.',
-          fullContent: '• La formación musical desarrolla enfoque, trabajo en equipo y confianza.\n• La formación en la fe mediante la adoración y la Escritura fortalece las raíces espirituales.\n• Los estudiantes son preparados para usar sus dones al servicio de Dios e impactar a otros.\n\nLevantando músicos que adoran con excelencia.',
+          fullContent: 'El ministerio Notas Altas & Grandes Esperanzas utiliza el poder de la excelencia musical para transformar vidas. Enseñamos géneros musicales saludables, sabiendo que los programas organizados construyen carácter, mejoran el rendimiento académico y fomentan niños bien adaptados.\n\nNuestra instrucción de alta calidad se entrega a cientos de estudiantes, incluidos aquellos en la escuela cristiana local y refugios infantiles. Incorporamos con oración música de alabanza y adoración en nuestro plan de estudios y compartimos el Evangelio según el Espíritu Santo nos guía, dando a cada niño las habilidades y la esperanza que necesitan.\n\nTu apoyo financia directamente becas que dan a los niños de familias empobrecidas acceso a esta instrucción que cambia vidas.\n\n**#NotasAltasGrandesEsperanzas** **#ExcelenciaMusical** **#CarácterATravésDeLaCreatividad** **#BecasDeEsperanza**',
         },
         youth: {
           title: 'Tesoros del Rey',
           subtitle: 'Treasures of the King',
           description: 'Tesoros del Rey (TDR) — la banda principal de Notas Altas & Grandes Esperanzas.',
-          fullContent: 'Una banda de adoración de músicos menores de 21 años que glorifican a Dios a través de música que inspira a todos a seguir a Cristo.\n\nInterpretan canciones cristianas actuales, escriben su propia música y buscan la excelencia en cada nota — elevando corazones a Jesús.\n\nMúsica que eleva los corazones a Jesús.',
+          fullContent: 'Tesoros Del Rey es el principal alcance ministerial de nuestro programa Notas Altas & Grandes Esperanzas, enfocándose en el desarrollo avanzado de estudiantes. Esta banda de adoración está compuesta principalmente por adolescentes (edades 13 a 21) que demuestran habilidad musical excepcional, carácter cristiano sólido y un deseo ardiente de compartir a Jesús. Los miembros de la banda son seleccionados por audición y sirven como poderosos líderes juveniles, realizando alcance en iglesias, escuelas y eventos públicos. Lideran la adoración para nuestro Campamento anual y mentorean activamente a estudiantes más jóvenes, completando un ciclo de discipulado que transforma estudiantes en líderes servidores confiados, hábiles y comprometidos para la próxima generación.\n\n**#TesorosDelRey** **#LíderesDeAdoraciónJuvenil** **#DeHabilidadAServicio** **#JóvenesEnMinisterio**',
         },
         english: {
           title: 'Dando Nueva Vida',
-          subtitle: 'Giving New Life',
+          subtitle: 'Un Nuevo Idioma, Una Nueva Vida.',
           description: 'Dando Nueva Vida ofrece clases gratuitas de inglés para niños y adolescentes.',
-          fullContent: 'Abriendo puertas a la oportunidad y señalando la esperanza en Jesús.\n\n• Los estudiantes universitarios adquieren valiosa experiencia docente.\n• Los niños y jóvenes descubren nuevas habilidades y confianza.\n• Juntos, celebramos la verdad: "Un nuevo idioma es una nueva vida."\n\nPalabras que Abren Mundos.',
+          fullContent: 'El dicho es cierto: "Cuando aprendes un nuevo idioma, recibes una nueva vida." A través de Dando Nueva Vida, proporcionamos clases de inglés gratuitas y de alta calidad para niños y adolescentes (edades 8–17).\n\nMantenemos un acuerdo estratégico con una universidad local, permitiendo que estudiantes avanzados de educación cumplan sus horas requeridas de servicio comunitario enseñando en nuestro programa. Esto proporciona a los niños una excelente instrucción y permite a nuestro ministerio construir relaciones duraderas y transformadoras con futuros educadores, cumpliendo verdaderamente la misión de dar nueva vida y formar la próxima generación de líderes.\n\n**#DandoNuevaVida** **#NuevoIdiomaNuevaVida** **#MentorandoFuturosEducadores**',
         },
-        giving: {
-          title: 'Ministerio de Generosidad',
-          subtitle: 'Generosidad y Servicio',
-          description: 'Enseñando los principios bíblicos de dar, mayordomía y servicio a otros en la comunidad.',
-        },
-        newLife: {
-          title: 'Ministerio Vida Nueva',
-          subtitle: 'Transformación a través de la Fe',
-          description: 'Un ministerio para el renacimiento espiritual y la transformación, ayudando a las personas a descubrir su propósito en Cristo.',
+        xp3: {
+          title: 'XP3',
+          subtitle: 'Respondiendo las Grandes Preguntas de la Vida',
+          description: 'Cada adolescente y joven adulto lidia con tres preguntas esenciales: ¿Quién soy? ¿Dónde encajo? ¿Qué diferencia puedo hacer?',
+          fullContent: 'Cada adolescente y joven adulto lidia con tres preguntas esenciales: ¿Quién soy? ¿Dónde encajo? ¿Qué diferencia puedo hacer? Lanzándose en el primer trimestre de 2026, el ministerio XP3 está diseñado para responder estas preguntas a través de la verdad inmutable de Cristo. Ayudamos a nuestros estudiantes a encontrar una Identidad segura como hijos de Dios, experimentar una auténtica Pertenencia en una familia de fe solidaria, y descubrir su Propósito dado por Dios para servir como la luz del mundo. XP3 es nuestra estrategia proactiva para equipar a la próxima generación con la fuerza interior y la misión que necesitan para prosperar.\n\n**#IdentidadPertenenciaPropósito** **#DiscipuladoNuevaGeneración**',
         },
         roots: {
           title: 'Raíces y Rutas',
           subtitle: 'Servicio. Aprendizaje. Transformación.',
           description: 'Raíces y Rutas te invita a descubrir tus fundamentos en Cristo y la comunidad, mientras exploras nuevas rutas de servicio, aprendizaje y amistad global. Únete a nosotros para una transformación mutua a través de Viajes Misioneros a Corto Plazo, Pasantías, Mentoría y Años Sabáticos, experimentando la familia de Dios a través de las culturas.',
-          fullContent: 'Raíces y Rutas: Intercambio Intercultural con CrossWorlds\n\nLas raíces nos mantienen arraigados en quiénes somos. Las rutas nos llevan a nuevos lugares y oportunidades. En CrossWorlds, nuestros programas de intercambio intercultural te invitan a descubrir ambos: encontrar tus raíces en Cristo y la comunidad, mientras caminas nuevas rutas de servicio, aprendizaje y amistad global.\n\nEl intercambio intercultural se trata de transformación mutua: las vidas cambian a medida que los participantes crecen en fe y perspectiva, y las comunidades locales son alentadas, fortalecidas y bendecidas a través de los dones y la presencia de quienes vienen a servir.\n\nOportunidades de Programa:\n\n1. Viajes Misioneros y Equipos de Campamento\nÚnete a un viaje misionero a corto plazo o sirve con un equipo de campamento de verano en Ecuador. Comparte vida, fe y aliento con estudiantes, familias e iglesias locales mientras experimentas la familia de Dios a través de las culturas.\n\n2. Pasantías (Corto y Largo Plazo)\nOfrecemos programas de 3–6 meses (un semestre de servicio e inmersión lingüística) y 1–2 años (un viaje más profundo de crecimiento y desarrollo de liderazgo). Los pasantes también pueden recibir créditos académicos por su servicio.\n\n3. Oportunidades de Año Sabático\nToma una pausa con propósito antes de tu próximo paso en la vida. Ya sea entre la secundaria y la universidad, o después de graduarte, un año sabático te permite servir, explorar el llamado de Dios y regresar a casa con mayor claridad y dirección.\n\n4. Mentoría con Experiencia\nLos baby boomers y jubilados pueden usar sus habilidades profesionales y experiencia de vida para fortalecer ministerios y mentorear líderes jóvenes. Tu sabiduría y presencia pueden dejar un legado duradero.\n\n5. Rutas de Verano (4–8 Semanas)\nEsta es una oportunidad enfocada para estudiantes universitarios y jóvenes adultos para crecer mientras experimentan Ecuador. Puedes Enseñar tus habilidades en programas comunitarios, Viajar para explorar la cultura, y Transformarte a ti mismo y a las comunidades que sirves.\n\nYa sea por una semana, un verano o un año, Raíces y Rutas se trata de pertenecer a la familia global de Dios, servir con alegría y descubrir las nuevas rutas que Dios ha preparado para tu vida.',
+          fullContent: 'Raíces y Rutas: Intercambio Intercultural con CrossWorlds\n\nLas raíces nos mantienen arraigados en quiénes somos. Las rutas nos llevan a nuevos lugares y oportunidades. En CrossWorlds, nuestros programas de intercambio intercultural te invitan a descubrir ambos: encontrar tus raíces en Cristo y la comunidad, mientras caminas nuevas rutas de servicio, aprendizaje y amistad global.\n\nEl intercambio intercultural se trata de transformación mutua: las vidas cambian a medida que los participantes crecen en fe y perspectiva, y las comunidades locales son alentadas, fortalecidas y bendecidas a través de los dones y la presencia de quienes vienen a servir.\n\nOportunidades de Programa:\n\n1. Viajes Misioneros y Equipos de Campamento\nÚnete a un viaje misionero a corto plazo o sirve con un equipo de campamento de verano en Ecuador. Comparte vida, fe y aliento con estudiantes, familias e iglesias locales mientras experimentas la familia de Dios a través de las culturas.\n\n2. Pasantías (Corto y Largo Plazo)\nOfrecemos programas de 3–6 meses (un semestre de servicio e inmersión lingüística) y 1–2 años (un viaje más profundo de crecimiento y desarrollo de liderazgo). Los pasantes también pueden recibir créditos académicos por su servicio.\n\n3. Oportunidades de Año Sabático\nToma una pausa con propósito antes de tu próximo paso en la vida. Ya sea entre la secundaria y la universidad, o después de graduarte, un año sabático te permite servir, explorar el llamado de Dios y regresar a casa con mayor claridad y dirección.\n\n4. Mentoría con Experiencia\nLos baby boomers y jubilados pueden usar sus habilidades profesionales y experiencia de vida para fortalecer ministerios y mentorear líderes jóvenes. Tu sabiduría y presencia pueden dejar un legado duradero.\n\n5. Rutas de Verano (4–8 Semanas)\nEsta es una oportunidad enfocada para estudiantes universitarios y jóvenes adultos para crecer mientras experimentan Ecuador. Puedes Enseñar tus habilidades en programas comunitarios, Viajar para explorar la cultura, y Transformarte a ti mismo y a las comunidades que sirves.\n\nYa sea por una semana, un verano o un año, Raíces y Rutas se trata de pertenecer a la familia global de Dios, servir con alegría y descubrir las nuevas rutas que Dios ha preparado para tu vida. \n\n **#RaícesYRutas**  **#NuevosAmigosNuevasRutas**  **#RutasQueCambianVidas**  **#VeAServirYCrecer **',
           aboutButton: 'Explorar Raíces y Rutas',
         },
         praiseWorship: {
           title: 'Campamento de Alabanza y Adoración',
           subtitle: 'Musica, Fe y Diversión.',
           description: 'Un campamento anual de una semana donde los niños descubren la alegría de la música y la adoración.',
-          fullContent: 'Cada verano, CrossWorlds organiza un vibrante Campamento de Alabanza y Adoración de una semana para niños de la comunidad. Este campamento gratuito combina capacitación musical, experiencia de adoración y formación de fe en un ambiente alegre y alentador.\n\nLos niños aprenden:\n• Habilidades musicales básicas (ritmo, canto, instrumentos)\n• Canciones de adoración en español e inglés\n• Trabajo en equipo y confianza a través de presentaciones\n• Verdades bíblicas a través de la música e historias\n\nLa semana culmina en un concierto de celebración donde las familias se reúnen para ver brillar a sus hijos. Para muchos niños, este campamento es su primera experiencia de ser celebrados, alentados y amados — y planta semillas de fe que duran toda la vida.',
+          fullContent: 'Nuestro Campamento gratuito y anual de Alabanza y Adoración es una semana intensa y alegre que sirve como un poderoso intercambio intercultural. Este campamento es 100% gratuito para cada niño, alcanzando a aquellos de familias empobrecidas que nunca podrían costear una experiencia de campamento basada en la fe. Estudiantes y adultos visitantes de América del Norte se asocian con líderes locales, compartiendo sus culturas únicas, su fe profunda y su pasión por la música.\n\nEl verdadero poder transformador del campamento radica en el amor incondicional demostrado: para un niño que se siente invisible o cree que no vale nada, este es el lugar donde es celebrado y descubre su verdadero valor ante los ojos de Dios. Colaboramos con iglesias locales para identificar a los niños y asegurar el seguimiento, extendiendo el amor y el ministerio a la familia del niño mucho después de que termine el campamento.\n\nLa semana culmina en un vibrante concierto de celebración de alta energía donde las familias y toda la comunidad se reúnen para presenciar cómo sus hijos brillan intensamente. Este momento inolvidable planta semillas de fe que florecen en vidas jóvenes transformadas y amistades globales duraderas, todo posible gracias a nuestros generosos patrocinadores.\n\n**#AdoraFuerteViveValiente** **#ÚneteAUnEquipoDeCampamento**',
           exploreButton: 'Contáctanos para Unirte',
         },
         ccc: {
           title: 'CrossWorlds Center for Connections',
           subtitle: 'Transformando vidas, Conectando Continentes.',
           description: 'El CrossWorlds Center for Connections (CCC) en Manta, Ecuador es más que un edificio — es un lugar y espacio donde las vidas se cruzan, la esperanza crece y el amor de Dios se hace visible.',
-          fullContent: 'En CrossWorlds, creemos que la transformación duradera ocurre a través de la conexión genuina… a través de las relaciones. Somos una fundación cristiana dedicada a fomentar el crecimiento espiritual, social y académico al servir a la comunidad de Manta. Nuestro Centro actúa como un punto de conexión, uniendo culturas para compartir dones, habilidades y la esperanza eterna del Evangelio.\n\nNuestros Ministerios\n\nEl Centro de Conexiones logra su misión a través de programas específicos e impactantes:\n\n• Dando Nueva Vida (Alcance Comunitario)\n• El Ministerio del Idioma Inglés (Habilidades Globales, Conexión)\n• Tesoros Del Rey (Ministerio de Banda de Adoración)\n• Notas Altas y Grandes Esperanzas (Ministerio de Arte y Música)\n• Seminarios de Capacitación (Liderazgo, Habilidades, Futuro)\n• Y próximamente en 2026, XP3',
+          fullContent: 'En CrossWorlds, creemos que la transformación duradera ocurre a través de la conexión genuina… a través de las relaciones. Somos una fundación cristiana dedicada a fomentar el crecimiento espiritual, social y académico al servir a la comunidad de Manta. Nuestro Centro actúa como un punto de conexión, uniendo culturas para compartir dones, habilidades y la esperanza eterna del Evangelio.\n\nNuestros Ministerios\n\nEl Centro de Conexiones logra su misión a través de programas específicos e impactantes:\n\n• Dando Nueva Vida (Alcance Comunitario)\n• El Ministerio del Idioma Inglés (Habilidades Globales, Conexión)\n• Tesoros Del Rey (Ministerio de Banda de Adoración)\n• Notas Altas y Grandes Esperanzas (Ministerio de Arte y Música)\n• Seminarios de Capacitación (Liderazgo, Habilidades, Futuro)\n• Y próximamente en 2026, XP3 \n\n **#TransformingForEternity**  **#ServingToLead**   **#GospelThroughAction**    **#CrossCulturalFaith**',
           exploreButton: 'Explorar Ministerios CCC',
         },
       },
@@ -434,12 +428,6 @@ export const translations = {
       subtitle: 'Da el primer paso para combinar educación con crecimiento espiritual.',
       contact: 'Contáctanos',
       exploreMinistries: 'Explorar Ministerios',
-    },
-    footer: {
-      tagline: 'Cuando los mundos se cruzan, el lenguaje conecta',
-      quickLinks: 'Enlaces Rápidos',
-      followUs: 'Síguenos',
-      rights: 'Todos los derechos reservados.',
     },
     getInvolved: {
       title: 'Participa',

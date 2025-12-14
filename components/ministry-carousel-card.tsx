@@ -42,6 +42,22 @@ export default function MinistryCarouselCard({
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
+  // Function to process markdown bold syntax (**text**)
+  const processMarkdown = (text: string) => {
+    const parts = text.split(/(\*\*.*?\*\*)/g);
+    return parts.map((part, index) => {
+      if (part.startsWith('**') && part.endsWith('**')) {
+        const boldText = part.slice(2, -2);
+        return (
+          <strong key={index} className="font-bold text-[#0b5298]">
+            {boldText}
+          </strong>
+        );
+      }
+      return part;
+    });
+  };
+
   return (
     <div className="group relative overflow-hidden gap-5 rounded-xl border-2 border-[#0b5298]/30 hover:border-[#0b5298] hover:shadow-2xl transition-all duration-300 bg-white">
       {/* Horizontal Layout */}
@@ -67,11 +83,16 @@ export default function MinistryCarouselCard({
         </div>
 
         {/* Text Side - Right */}
-        <div className="p-6 md:p-8 flex flex-col justify-center bg-gradient-to-br from-white to-[#0b5298]/5">
+        <div className="p-4 md:p-6 flex flex-col bg-gradient-to-br from-white to-[#0b5298]/5">
           <div className="relative">
             <div className="max-h-[320px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-[#0b5298]/30 scrollbar-track-transparent hover:scrollbar-thumb-[#0b5298]/50">
-              <div className="prose prose-sm max-w-none text-foreground/80 whitespace-pre-line leading-relaxed text-sm md:text-base pb-4 [&>br]:mb-3">
-                {slides[currentSlide].text}
+              <div className="prose prose-sm max-w-none text-foreground/80 whitespace-pre-line leading-[2] text-sm md:text-base pb-4 [&>br]:mb-3">
+                {slides[currentSlide].text.split('\n').map((line, lineIndex) => (
+                  <span key={lineIndex}>
+                    {processMarkdown(line)}
+                    {lineIndex < slides[currentSlide].text.split('\n').length - 1 && <br />}
+                  </span>
+                ))}
               </div>
             </div>
             {/* Fade gradient at bottom - reduced opacity */}
@@ -80,12 +101,12 @@ export default function MinistryCarouselCard({
 
           {/* Donation Link */}
           {donationLink && (
-            <div className="mt-auto pt-4">
+            <div className="mt-6">
               <a
                 href={donationLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-full px-6 py-3 bg-[#0b5298] text-white font-semibold rounded-lg hover:bg-[#093f72] transition-colors shadow-md"
+                className="inline-flex items-center justify-center w-full px-8 py-4 bg-gradient-to-r from-[#0b5298] to-[#093f72] text-white text-lg font-semibold rounded-lg hover:from-[#093f72] hover:to-[#072d54] transition-all shadow-lg hover:shadow-xl"
               >
                 Donar / Donate →
               </a>
@@ -94,10 +115,10 @@ export default function MinistryCarouselCard({
 
           {/* Explore Link */}
           {exploreLink && exploreButton && (
-            <div className="mt-auto pt-4">
+            <div className="mt-6">
               <a
                 href={exploreLink}
-                className="inline-flex items-center justify-center w-full px-6 py-3 bg-[#0b5298] text-white font-semibold rounded-lg hover:bg-[#093f72] transition-colors shadow-md"
+                className="inline-flex items-center justify-center w-full px-8 py-4 bg-gradient-to-r from-[#0b5298] to-[#093f72] text-white text-lg font-semibold rounded-lg hover:from-[#093f72] hover:to-[#072d54] transition-all shadow-lg hover:shadow-xl"
               >
                 {exploreButton} →
               </a>

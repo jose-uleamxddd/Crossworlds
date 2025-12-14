@@ -119,10 +119,9 @@ export default function About() {
                     '/images/about us/02.jpeg',
                     '/images/about us/03.jpeg',
                     '/images/about us/04.jpeg',
-                    '/images/about us/05.jpeg',
                   ]}
                   className="h-full"
-                  autoPlayInterval={4000}
+                  autoPlayInterval={3000}
                 />
               </div>
             </div>
@@ -221,7 +220,7 @@ export default function About() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="/get-involved"
+              href="/ministries"
               className="px-8 py-3 bg-white text-primary font-semibold rounded-lg hover:bg-white/90 transition-colors"
             >
               {getTranslation(language, 'home.cta1')}

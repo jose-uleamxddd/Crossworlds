@@ -17,7 +17,7 @@ export default function EcuadorMinistries() {
       color: 'from-purple-400 to-purple-600',
       slides: [
         {
-          image: '/images/ministries/high-notes-high-hopes/01.jpeg',
+          image: '/images/ministries/high-notes-high-hopes/01.png',
           text: getTranslation(language, 'ministries.list.music.fullContent'),
         },
         {
@@ -41,15 +41,19 @@ export default function EcuadorMinistries() {
       color: 'from-pink-400 to-pink-600',
       slides: [
         {
-          image: '/images/ministries/high-notes-high-hopes/01.jpeg',
+          image: '/images/ministries/Tesoros del rey/01.jpeg ',
           text: getTranslation(language, 'ministries.list.youth.fullContent'),
         },
         {
-          image: '/images/ministries/high-notes-high-hopes/02.jpeg',
+          image: '/images/ministries/Tesoros del rey/02.jpeg',
           text: getTranslation(language, 'ministries.list.youth.fullContent'),
         },
         {
-          image: '/images/ministries/high-notes-high-hopes/03.jpeg',
+          image: '/images/ministries/Tesoros del rey/03.jpeg',
+          text: getTranslation(language, 'ministries.list.youth.fullContent'),
+        },
+        {
+          image: '/images/ministries/Tesoros del rey/04.jpeg',
           text: getTranslation(language, 'ministries.list.youth.fullContent'),
         },
       ],
@@ -61,7 +65,11 @@ export default function EcuadorMinistries() {
       color: 'from-green-400 to-green-600',
       slides: [
         {
-          image: '/images/ministries/giving-new-life/01.jpeg',
+          image: '/images/ministries/giving-new-life/01.jpeg ',
+          text: getTranslation(language, 'ministries.list.english.fullContent'),
+        },
+        {
+          image: '/images/ministries/giving-new-life/0001.jpeg',
           text: getTranslation(language, 'ministries.list.english.fullContent'),
         },
         {
@@ -71,6 +79,18 @@ export default function EcuadorMinistries() {
         {
           image: '/images/ministries/giving-new-life/03.jpeg',
           text: getTranslation(language, 'ministries.list.english.fullContent'),
+        },
+      ],
+    },
+    {
+      id: 'xp3-ministry',
+      title: getTranslation(language, 'ministries.list.xp3.title'),
+      subtitle: getTranslation(language, 'ministries.list.xp3.subtitle'),
+      color: 'from-blue-400 to-blue-600',
+      slides: [
+        {
+          image: '/images/ministries/xp3/01.jpeg',
+          text: getTranslation(language, 'ministries.list.xp3.fullContent'),
         },
       ],
     },
@@ -84,7 +104,7 @@ export default function EcuadorMinistries() {
       <section className="bg-gradient-to-r from-primary to-accent py-16 text-primary-foreground">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold text-balance mb-4">
-            {language === 'en' ? 'CCC Ecuador Ministries' : 'Ministerios CCC Ecuador'}
+            {language === 'en' ? 'Crossworlds Connections Ecuador Ministries' : 'Ministerios Crossworlds Connections Ecuador'}
           </h1>
           <p className="text-xl text-primary-foreground/90">
             {language === 'en' 

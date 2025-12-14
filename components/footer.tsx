@@ -10,9 +10,9 @@ export default function Footer() {
   const t = translations[language];
 
   return (
-    <footer className="bg-[#0b5298] text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px- py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 items-start mb-11">
+    <footer className="bg-gradient-to-b from-[#0b5298] to-[#093f72] text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10 items-start mb-8">
           {/* CrossWorlds Connections */}
           <div className="text-center md:text-left flex flex-col">
             <h3 className="font-bold text-xl mb-4">CrossWorlds Connections</h3>
