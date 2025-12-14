@@ -60,7 +60,6 @@ export default function ImageCarousel({
           className="object-cover transition-opacity duration-500"
           priority={currentIndex === 0}
           loading={currentIndex === 0 ? 'eager' : 'lazy'}
-          quality={85}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
         />
         
