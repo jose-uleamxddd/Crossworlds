@@ -28,6 +28,10 @@ export default function Navigation() {
           src="/images/logos/logo_cross-removebg-preview.png"
           alt="Crossworlds Connection" 
           className="h-12 w-auto object-contain group-hover:scale-105 transition-transform"
+          loading="eager"
+          fetchPriority="high"
+          width={48}
+          height={48}
         />
         <span className="hidden md:inline font-bold text-white text-lg">Crossworlds</span>
       </Link>

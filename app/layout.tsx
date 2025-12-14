@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import LanguageProviderWrapper from '@/components/language-provider-wrapper'
+import PreloadImages from './preload-images'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -35,6 +36,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
       </head>
       <body className={`font-sans antialiased`}>
+        <PreloadImages />
         <LanguageProviderWrapper>
           {children}
         </LanguageProviderWrapper>

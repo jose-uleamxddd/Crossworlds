@@ -15,11 +15,15 @@ export default function Hero() {
     <section className="py-20 md:py-32 relative overflow-hidden">
   {/* Background Image */}
   <div className="absolute inset-0 z-0">
-    <img 
-      src="/images/home/hero-background.png"
-      alt="CrossWorlds Background"
-      className="w-full h-full object-cover"
-    />
+    <div className="relative w-full h-full">
+      <img 
+        src="/images/home/hero-background.png"
+        alt="CrossWorlds Background"
+        className="w-full h-full object-cover"
+        loading="eager"
+        fetchPriority="high"
+      />
+    </div>
     {/* Overlay */}
     <div className="absolute inset-0 bg-gradient-to-br from-[#0b5298]/85 via-[#0d63b8]/95 to-[#093f72]/85"></div>
   </div>
