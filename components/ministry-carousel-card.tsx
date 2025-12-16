@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useLanguage } from '@/lib/language-context';
-import Image from 'next/image';
 
 interface CarouselSlide {
   image: string;
@@ -64,16 +63,10 @@ export default function MinistryCarouselCard({
       <div className="grid md:grid-cols-2">
         {/* Image Side - Left */}
         <div className="relative h-[400px] md:h-[500px] overflow-hidden bg-gray-100">
-          <Image
+          <img
             src={slides[currentSlide].image}
             alt={title}
-            fill
-            className="object-cover"
-            priority={currentSlide === 0}
-            loading={currentSlide === 0 ? 'eager' : 'lazy'}
-            sizes="(max-width: 768px) 100vw, 50vw"
-            placeholder="blur"
-            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWEREiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+            className="object-cover w-full h-full"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0b5298]/40 to-transparent pointer-events-none"></div>
           
