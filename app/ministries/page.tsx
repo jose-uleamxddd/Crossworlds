@@ -57,6 +57,10 @@ export default function Ministries() {
           image: '/images/ministries/praise-worship-camp/04.jpeg',
           text: getTranslation(language, 'ministries.list.praiseWorship.fullContent'),
         },
+        {
+          image: '/images/ministries/praise-worship-camp/05.jpeg',
+          text: getTranslation(language, 'ministries.list.praiseWorship.fullContent'),
+        },
       ],
       exploreLink: '/contact',
       exploreButton: getTranslation(language, 'ministries.list.praiseWorship.exploreButton'),
