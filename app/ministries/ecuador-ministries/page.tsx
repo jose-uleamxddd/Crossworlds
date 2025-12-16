@@ -89,7 +89,7 @@ export default function EcuadorMinistries() {
       color: 'from-blue-400 to-blue-600',
       slides: [
         {
-          image: '/images/ministries/xp3/01.jpeg',
+          image: '/images/ministries/XP3/01.jpeg',
           text: getTranslation(language, 'ministries.list.xp3.fullContent'),
         },
       ],
