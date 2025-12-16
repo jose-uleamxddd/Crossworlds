@@ -17,6 +17,7 @@ export default function GetInvolved() {
       description: getTranslation(language, 'getInvolved.goServe.description'),
       fullDescription: getTranslation(language, 'getInvolved.goServe.fullDescription'),
       cta: getTranslation(language, 'getInvolved.goServe.cta'),
+      link: '/contact',
     },
     {
       icon: DollarSign,
@@ -25,6 +26,7 @@ export default function GetInvolved() {
       description: getTranslation(language, 'getInvolved.giveSustain.description'),
       fullDescription: getTranslation(language, 'getInvolved.giveSustain.fullDescription'),
       cta: getTranslation(language, 'getInvolved.giveSustain.cta'),
+      link: 'https://www.zeffy.com/en-US/donation-form/2025-purpose-and-hope',
     },
     {
       icon: Heart,
@@ -33,6 +35,7 @@ export default function GetInvolved() {
       description: getTranslation(language, 'getInvolved.praySupport.description'),
       fullDescription: getTranslation(language, 'getInvolved.praySupport.fullDescription'),
       cta: getTranslation(language, 'getInvolved.praySupport.cta'),
+      link: '/contact',
     },
     {
       icon: Users,
@@ -41,6 +44,7 @@ export default function GetInvolved() {
       description: getTranslation(language, 'getInvolved.rootsRoutes.description'),
       fullDescription: getTranslation(language, 'getInvolved.rootsRoutes.fullDescription'),
       cta: getTranslation(language, 'getInvolved.rootsRoutes.cta'),
+      link: '/contact',
     },
   ];
 
@@ -115,7 +119,9 @@ export default function GetInvolved() {
 
               {/* CTA Button */}
               <a
-                href="/contact"
+                href={opportunity.link}
+                target={opportunity.link.startsWith('http') ? '_blank' : undefined}
+                rel={opportunity.link.startsWith('http') ? 'noopener noreferrer' : undefined}
                 className="inline-flex items-center px-6 py-2 bg-[#0b5298] text-white font-semibold rounded-lg hover:bg-[#093f72] transition-colors"
               >
                 {opportunity.cta} →
