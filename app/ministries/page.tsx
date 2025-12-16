@@ -72,7 +72,7 @@ export default function Ministries() {
       color: 'from-cyan-400 to-cyan-600',
       slides: [
         {
-          image: '/images/ministries/crossworlds-center/a.jpeg ',
+          image: '/images/ministries/crossworlds-center/a.jpeg',
           text: getTranslation(language, 'ministries.list.ccc.fullContent'),
         },
         {
@@ -80,7 +80,7 @@ export default function Ministries() {
           text: getTranslation(language, 'ministries.list.ccc.fullContent'),
         },
         {
-          image: '/images/ministries/crossworlds-center/c.jpeg ',
+          image: '/images/ministries/crossworlds-center/c.jpeg',
           text: getTranslation(language, 'ministries.list.ccc.fullContent'),
         },
         {
@@ -88,7 +88,7 @@ export default function Ministries() {
           text: getTranslation(language, 'ministries.list.ccc.fullContent'),
         },
         {
-          image: '/images/ministries/crossworlds-center/04.jpeg ',
+          image: '/images/ministries/crossworlds-center/04.jpeg',
           text: getTranslation(language, 'ministries.list.ccc.fullContent'),
         },
       ],
