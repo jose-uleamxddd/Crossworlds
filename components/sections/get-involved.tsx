@@ -91,13 +91,13 @@ export default function GetInvolved() {
               
               {/* Description with gradient overlay when collapsed */}
               <div className="relative mb-6">
-                <p className={`text-foreground/70 leading-relaxed transition-all duration-300 ${
+                <p className={`text-foreground/50 leading-relaxed transition-all duration-300 ${
                   expandedCard === index ? '' : 'line-clamp-3'
                 }`}>
                   {expandedCard === index ? opportunity.fullDescription : opportunity.description}
                 </p>
                 {!expandedCard || expandedCard !== index ? (
-                  <div className="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+                  <div className="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
                 ) : null}
               </div>
 
