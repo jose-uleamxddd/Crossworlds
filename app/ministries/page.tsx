@@ -38,6 +38,7 @@ export default function Ministries() {
         },
       ],
       donationLink: getTranslation(language, 'ministries.list.sewing.donationLink'),
+      videoLink: 'https://vm.tiktok.com/ZMDRTFhCx/',
     },
     {
       id: 'praise-worship',
@@ -64,6 +65,7 @@ export default function Ministries() {
       ],
       exploreLink: '/contact',
       exploreButton: getTranslation(language, 'ministries.list.praiseWorship.exploreButton'),
+      videoLink: 'https://vm.tiktok.com/ZMDRTSXqj/',
     },
     {
       id: 'ccc',
@@ -94,6 +96,7 @@ export default function Ministries() {
       ],
       exploreLink: '/ministries/ecuador-ministries',
       exploreButton: getTranslation(language, 'ministries.list.ccc.exploreButton'),
+      videoLink: 'https://vm.tiktok.com/ZMDRTbTdF/',
     },
     {
       id: 'roots-and-routes',

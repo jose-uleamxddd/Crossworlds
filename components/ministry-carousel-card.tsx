@@ -19,6 +19,7 @@ interface MinistryCarouselCardProps {
   imageFolder?: string; // Optional: folder path in /images/ministries/
   exploreLink?: string; // Optional: link to explore more ministries
   exploreButton?: string; // Optional: button text for explore
+  videoLink?: string; // Optional: TikTok video link
 }
 
 export default function MinistryCarouselCard({
@@ -29,9 +30,11 @@ export default function MinistryCarouselCard({
   donationLink,
   exploreLink,
   exploreButton,
+  videoLink,
 }: MinistryCarouselCardProps) {
   const { language } = useLanguage();
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [showTooltip, setShowTooltip] = useState(false);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -73,8 +76,28 @@ export default function MinistryCarouselCard({
           {/* Title Overlay on Image */}
           <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-[#0b5298] to-transparent">
             <p className="text-sm font-semibold mb-1 text-white/90">{subtitle}</p>
-            <h3 className="text-2xl md:text-3xl font-bold text-white">{title}</h3>
+            {videoLink ? (
+              <a
+                href={videoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-2xl md:text-3xl font-bold text-white hover:text-cyan-400 transition-colors duration-300 inline-block"
+                onMouseEnter={() => setShowTooltip(true)}
+                onMouseLeave={() => setShowTooltip(false)}
+              >
+                {title}
+              </a>
+            ) : (
+              <h3 className="text-2xl md:text-3xl font-bold text-white">{title}</h3>
+            )}
           </div>
+          
+          {/* Tooltip */}
+          {videoLink && showTooltip && (
+            <div className="absolute top-4 right-4 bg-white/95 backdrop-blur-sm text-[#0b5298] px-4 py-2 rounded-lg shadow-lg text-sm font-semibold z-20 animate-in fade-in slide-in-from-top-2 duration-200">
+              {language === 'es' ? 'Ir al video' : 'Go to the video'}
+            </div>
+          )}
         </div>
 
         {/* Text Side - Right */}

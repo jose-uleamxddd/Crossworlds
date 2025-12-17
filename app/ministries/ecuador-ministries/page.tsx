@@ -57,6 +57,7 @@ export default function EcuadorMinistries() {
           text: getTranslation(language, 'ministries.list.youth.fullContent'),
         },
       ],
+      videoLink: 'https://vm.tiktok.com/ZMDRTReAX/',
     },
     {
       id: 'english-ministry',
