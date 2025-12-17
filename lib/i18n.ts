@@ -201,7 +201,7 @@ export const translations = {
         title: 'Go & Serve',
         subtitle: 'Short-Term Missions / On-Site Service',
         description: 'Experience the Mission firsthand! Join a short-term mission trip for a week or a season.',
-        fullDescription: 'Experience the Mission firsthand! Join a short-term mission trip for a week or a season. Share your skills—teaching English, leading music, helping with construction, or simply building relationships. Step into the journey of discipleship and experience mutual growth by serving alongside our local partners in Ecuador.',
+        fullDescription: '"Experience the Mission firsthand! Join a short-term mission trip for a week or a season. Share your skills—teaching English, leading music, teaching sewing and tailoring, or simply building relationships. Step into the journey of discipleship and experience mutual growth by serving alongside our local partners in Ecuador to see lives transformed through Gods love.',
         cta: 'Learn More',
       },
       giveSustain: {
