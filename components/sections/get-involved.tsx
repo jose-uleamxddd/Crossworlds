@@ -97,7 +97,7 @@ export default function GetInvolved() {
                   {expandedCard === index ? opportunity.fullDescription : opportunity.description}
                 </p>
                 {!expandedCard || expandedCard !== index ? (
-                  <div className="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+                  <div className="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-white/60 to-transparent pointer-events-none"></div>
                 ) : null}
               </div>
 
