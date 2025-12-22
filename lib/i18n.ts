@@ -405,7 +405,7 @@ export const translations = {
         subjectEnrollment: 'Coser para vivir',
         subjectVolunteering: 'Roots and routes',
         subjectDonation: 'Crossworlds Center for Connections',
-        subjectOther: 'Prise and Worship Camp',
+        subjectOther: 'Praise and Worship Camp',
         subjectOther2: 'Otro',
         message: 'Mensaje',
         messagePlaceholder: 'Tu mensaje aquí...',
