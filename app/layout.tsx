@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     siteName: 'Crossworlds Connection',
     images: [
       {
-        url: '/images/logos/logo_cross-removebg-preview.png',
+        url: 'https://crossworlds-connection.com/images/logos/logo_cross-removebg-preview.png',
         width: 1200,
         height: 630,
         alt: 'Crossworlds Connection Logo',
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Crossworlds Connection - Music & English Education',
     description: 'Education united with spiritual growth',
-    images: ['/images/logos/logo_cross-removebg-preview.png'],
+    images: ['https://crossworlds-connection.com/images/logos/logo_cross-removebg-preview.png'],
   },
   robots: {
     index: true,
